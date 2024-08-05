@@ -1,0 +1,3523 @@
+===service requests conditions======
+=>ERR 
+1. past 10 dates
+2. future 30 day it will open popup
+
+=>ID exception
+only current day and future dates popup will open
+
+=>TCC and rescore
+two will open for past dates
+=>remaining service rquests will open for any dates
+=======incase u want to revert last commit which is not yet pushed==== use below command========
+git reset --soft HEAD~1
+=====================
+========create a new pipeline with same commit id (when pipeline expires after one month)=========
+step 1=> git checkout feature/mcat-dms/development
+step 2=> git checkout efcb8a1a2924214dd4afe1bbdc99525aae6cb58e
+step 3=> git checkout -b release/mcat-dms/angular16
+step 4=> git add .   
+step 5=> git commit -m "release branch"
+step 6=> git push
+step 7=> then create pipeline from this branch (release/mcat-dms/angular16)
+screeshot attached inn my profile in aamc teams
+
+====git commands NEW=============
+=> git clone (copy source code with SSH) and then run npm install peer-depts
+=> create a branch in github
+=> git checkout feture/mcat-mrs/development
+=> git ftech
+=> git checkout created branch
+=> git add .
+=> git commit -m "change"
+=> git push
+
+=================================
+==========git reset --hard (if u get conflicts when u pull other branch changes into current branch than this command remove pull)
+=====angular 16 setup=========
+
+git pull origin feature/mcat-mrs/development
+rmdir /s node_modules
+npm install 
+git fetch
+git checkout local branch
+=============================
+
+to open not fully accounted examinee modal in dms== 400204-2019
+to open ON-HOLD count is there, modal would be open = 400202 - 2019
+to open paper and pencile exam count is there, modal would be open = 400202 - 2019
+mcat ID to get released_scores : 58871471, 57371361
+mcat Id for post voide = 58171184
+on hold record = 51472379
+
+====only 8 digit secureId pin is enough for pwd in AWS login now==========
+========github account-aamc=1-5-24=========
+		user: sankaraiahburraaamc
+		pwd: aamc@123
+=============run prettier command in terminal when pipeline fail in browser========
+npx prettier apps/mcat-mrs/src/app/dashboard/modals/service-request/service-request.component.html --write
+====================
+===seat booking link=======https://mvisage.mindtree.com/ClientApp/dashboard
+=====aamc team standup link=========
+https://teams.microsoft.com/l/meetup-join/19%3ameeting_NWU3MGUxOTYtNjI1YS00ZmYwLWFhMjEtZGFjMGY3ZTk0N2Jm%40thread.v2/0?context=%7b%22Tid%22%3a%22cd5b1516-60cc-463a-a350-85f82043c087%22%2c%22Oid%22%3a%223bcb0597-7b91-4d64-ade4-5ac5de3e166b%22%7d
+=============
+mcat id= to open delivery exception=========== 5342601, 5346451
+=====mcat-admin- userwhich have developer role====sankarnovember
+====splunk serching=================
+=> queqry == index=tomcat* host=dv-u-mcat* "500(this is optional)" "*dashboard*" and date and time range=========
+==splunk request and response after registration completed====
+index=tomcat* host="dv-u-mcat*" source="/opt/apps/vendor-gateway-service/logs/catalina.out" "RTI Request"
+====================
+===nvm== nodejs setup=======
+step-1 nodejs
+step-2 nvm
+========go to nvm folder you will see different versions of nodejs and open that folder copy files
+======come back to nodejs folder and paste there
+=== install nodejs using nvm==== nvm install v14.20.1
+===uninstall nodejs using nvm==== nvm uninstall 14.20.1
+====use required version of node ===== nvm use 14.20.1
+==========================
+===Run below command to install npm in the latest versions of angular instead npm i==========
+npm install --legacy-peer-deps
+============================
+NEW way of instaling nodejs latest version example: 16.8.1
+=> search softwareCenter  in window search bar and install nodejs 16.8.1 without raising service1 ticket
+
+=====to get edit biographic page in SRS  => login with tselvaraj user and search with "75989734" 
+
+======genie ticket rasing process
+slect genie in utilities
+click "Browse catalog"
+select "raise issue"
+
+=========while merge development to master branch======
+use first option(merge commit) not default option and them merge it
+
+========general cred's for aamc apps=========
+user: AAMCUser
+pwd:  BasicAuth1!
+
+=srs== local username and pwd===========
+user: mamirsoltani
+pwd: Password!7
+===================
+=== get exact error in unit command ==================
+npm run test mcat-mrs -- --code-coverage --detectOpenHandles
+=====================
+
+registration credit card details=========
+
+Ftest Credit card info:
+4788250000121443
+Expiration date : 06 2024
+name : Any Name
+Security code :111
+
+================
+code post steps=================
+open bamboo build url  and then login with aamc login credentials ==>
+ 1=> search for "MCAT registration system web" and select branch as master or release depends on requirement
+		and click "run branch" it will start running 
+		2=> go to logs then click view and then search for "release" then u will get release version copy that and open "metaapp url"
+3=>metaapp login with production app user name "SBURRA2" and pwd: ""
+4=> then select Mcat MRS angular upgrade and then select environment as "functional test" and click "upgrade" button
+5=> click "post code" button and then copy "release tag version" from bambbo build then clcikc submit button
+6 => go to post history then check code post date and approval
+====angular interview questions===========
+
+NEW INTERVIEW QUESTIONS=====
+oops concepts
+dependency injection (how object created when inject service method)
+cache management
+====javascript interview questions link============
+https://www.interviewbit.com/javascript-interview-questions/
+
+NGRX =============== with example link==============
+https://www.techiediaries.com/angular-10-ngrx-store-example/
+https://dzone.com/articles/angular-app-state-management-with-ngrx
+how asynchronous program exicutes????????????
+change dection  method====
+improve angular app performance=============
+async and await example=============
+
+ ans=> 
+ async fetchData() {
+    this.message = "Fetching..";
+    this.response = "";
+    this.response = await this.httpClient
+      .get<any>(this.apiURL)
+      .pipe(delay(1000))
+      .toPromise();
+    this.message = "Fetched";
+  }
+
+===========why we need nod.js in angular app====================
+npm (node package manager) comes with Node.js by default and it allows you to manage your dependencies. So, 
+you don’t have to worry for operations like adding a dependency, removing some, updating your package.json.
+=======================
+remove value and key from object when value is null in object===========
+ANs=>
+let obj = {a:null, b:'dd',c:1,d:null};
+let o = Object.fromEntries(Object.entries(obj).filter(([_, v]) => v != null));
+
+ng2,3,4,5,6,7,8,9,10 new features link
+https://medium.com/@lifenshades/difference-among-angular-8-7-6-5-4-3-2-breakdown-new-features-and-changes-811fb5f8e6f0
+===========
+package.json vs package-lock.json=====
+
+ANS=> The package.json is used for more than dependencies - like defining project properties, description, author & license information, scripts, etc. 
+The package-lock.json is solely used to lock dependencies to a specific version number.
+============
+=>  angular guard canactivate vs candeactivate
+Ans=>CanActivate Checks route navigation before the component is loaded, CanDeactivate Checks navigation from the current route 
+eg leaving the partially filled form and Resolve loads/ retrieves data before the route is activated
+1=>  viewencapsulation to get css from parent to child
+2=> default change detect vs onpush change detect
+ANS=> 
+in deafut change detector, angular will run change detector any time @input data changed
+and onpush change detector run only when new reference added.
+
+3=> how to get new instantiation in component of a service bcz it's sigleton service
+ans=> by using providers: [service] in component, u can get new instance of service.
+      by using @Injectoble({ providerIn: root}), angular provide single, share intance 
+4=> reactive forms vs template driven forms
+ANS=> template D Forms moslty asynchronous and reactive forms are synchronous
+and in template D Forms aproach, logic driven from Template and in rective forms login resides in component or typescript code.
+
+5=> when u make impure pipe from pure pipe(pure pipe is default pipe)  (and async pipe)
+ANS for pure vs impure pies=> 
+impure-pipe works for every change in the component
+pure-pipe works only when the component is loaded.
+
+impure example => @Pipe({
+  		name: 'sort',
+  		pure: false //true makes it pure and false makes it impure
+		})
+		export class myPipe implements PipeTransform {
+
+ 		 transform(value: any, args?: any): any {
+    		 //your logic here and return the result
+ 		 }
+
+		}
+		<div> {{ arrayOfElements | sort }}<div>
+
+6=> if service has error(any error) how to show error message
+ANS=>  HTTTP_interceptors
+
+7=> types of custom directives in angular 8
+8=> can i use more than one interceptor in application?
+ANS => Multiple Interceptors can be added in Angular with each Interceptor having different purpose
+15 => how to get new records without old recoreds by using rxjs
+ANS => by using switchMap() we can get new records every time 
+14=> how to handle multiple subscriptions 
+ANS => use FlatMap rxjs operator to achieve this
+13=> Behaviour subject vs subject
+12=> where we use closure
+9=> importance of call apply bind in javascript
+10=> getters, setters
+11=>this keyword
+(It has different values depending on where it is used:
+In a method, this refers to the owner object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that received the event.
+Methods like call(), and apply() can refer this to any object.)
+
+=> Interface == interface define properties, methods and event which are members of interface
+
+=>  Route gaurds below
+ 	CanActivate : checks the route access
+	CanActivateChild :Checks the child route access
+	CanDeactivate : it asks the permission to discard the changes
+	CanLoad : Checks before load feature module
+
+Resolve : it pre-fetch the route data
+ =>reactive forms ===
+FormControl: Tracks the value and validation state of a form control.
+FormGroup: Tracks the value and validity state of a group of FormControl.
+FormArray: Tracks the value and validity state of array of FormControl, FormGroup and FormArray.
+FormBuilder: Creates a big reactive form with minimum code in Angular. FormBuilder has methods as group(), control() and array() that returns FormGroup, 
+FormControl and FormArray respectively.
+
+
+improve angular app performance=====================
+
+1. lazy loading
+2. write logic part in component only
+3. unsubscribe observables
+4. use dom manipulations
+5. ngrx
+6.security in angular app
+7. Using AoT Compilation
+8. Using OnPush Change Detection Strategy
+=========================
+
+========by using const=array; u can change array values==========
+
+======== can i use ,more than one <router-outlet> in app=========
+ANs: yes, we can use by using <router-outlet name="reoutr1"> like this, by giving name we can use
+========= can we use ngif, ngfor in same element==========
+using ng-template we use 
+============
+generate component in mono repo with nx======
+=>to create a feature module
+nx g @nrwl/angular:lib fsdl/customer/feature-registration 
+
+=> nc g c footer --project=fsdl-customer-ui --dryRun
+(nx g c member-registration --project=fsdl-customer-feature-registration )
+
+to run unit tests in mono repo(nx)
+=> nx run shared-ui:test --code-coverage(--watch)
+=====EX: to test fsdl/customer/registration module
+(nx run fsdl-customer-feature-registration:test --code-coverage)
+(nx run freightx-masters-container-master:test --code-coverage)
+============
+=======canActivate to protect angular app link==============
+https://medium.com/@ryanchenkie_40935/angular-authentication-using-route-guards-bf7a4ca13ae3
+========================
+=encapsulation in angular=============== 3 ways=========
+ViewEncapsulation.Emulated: Apply modified component styles in order to emulate a native Shadow DOM CSS encapsulation behavior.
+ViewEncapsulation.None: Apply component styles globally without any sort of encapsulation.
+ViewEncapsulation.ShadowDom: Use the browser's native Shadow DOM API to encapsulate styles.
+=============
+@viewChild:  The ViewChild decorator returns the first element that matches a given directive, component
+=======observable=====================
+
+import {Observable} from 'rxjs';
+
+let obs = Observable.create(observer=>{
+   observer.next(Math.random());
+})
+obs.subscribe(res=>{
+  console.log('subscription a :', res); //subscription a :0.2859800202682865
+});
+obs.subscribe(res=>{
+  console.log('subscription b :', res); //subscription b :0.694302021731573
+});
+
+======================================string problems ======= START =================
+
+====generate all posible strings============
+ function combinations(str) {
+var arr = [];   
+for (var i = 0; i < str.length; i++) 
+{
+    var comb = "";
+    // loop for substring
+    for (var j = i; j < str.length; j++) 
+        {
+        comb+=str[j];
+        arr.push(comb);
+        }
+}
+  return arr;
+
+}
+console.log(combinations('output'));
+
+=========================================
+function uni(s){ var uniq='';
+for(var i=0; i<s.length; i++){
+if(uniq.indexOf(s.charAt(i))== -1)
+{
+uniq +=s[i];
+}
+}
+return uniq;
+              }
+uni('thenbght')
+"thenbg"
+=====================other way of get uniq=========
+
+var nonUnique = "ababdefegg";
+var unique = nonUnique.split('').filter(function(item, i, ar){ return ar.indexOf(item) === i; }).join('');
+
+=========print longest word  in a line==========
+
+function getLongestWord(str){
+  let words = str.split(' ');
+  let maxLength = 0;
+  let longestWord = '';
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+      longestWord = words[i];
+    }
+  }
+
+  console.log(maxLength);
+  console.log(longestWord);
+    }
+
+getLongestWord('web development tutorial');
+//develpment 
+========== get ovel list in string===========
+
+function vowel_count(str1) {
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  
+  for(var x = 0; x < str1.length ; x++) {
+    if (vowel_list.indexOf(str1[x]) !== -1) {
+      vcount ++;
+    }
+  }
+  return vcount;
+}
+console.log(vowel_count("The quick brown fox")); 
+
+=====print in aplhabetical order ==========
+
+function alphabet(str){
+return str.split('').sort().join('');
+}
+alphabet('webmaster');
+"abeemrstw"
+
+============swap camelcase==============
+
+function swap(str) {
+    let swapped = '';
+    for(let i=0; i<str.length; i++){
+        let char = str.charAt(i);
+        if(char === char.toUpperCase()){
+            swapped += char.toLowerCase();
+        } else {
+            swapped += char.toUpperCase();
+        }
+    }
+    return swapped;
+}
+console.log(swap('aaBbcCdD'))   //AAbBCcDd
+
+===capitalize every starting letter=========
+
+let myString = "hello, world!";
+let words = myString.split(" ");
+for (let i = 0; i < words.length; i++) {
+  words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+}
+let newString = words.join(" ");
+console.log(newString); // "Hello, World!"
+=======repteat str n times========
+
+function repeat(str, count){
+if(typeof(count) == 'undefined'){ count=1;
+                               }
+return count<1 ? '' : new Array(count + 1).join(str);
+}
+repeat('sankar', 3)
+"sankarsankarsankar"  
+
+======2nd method===========
+function repeat(str, times) {
+    let result = '';
+    while(times>0){
+        result += str;
+        times--;
+    }
+    return result;
+}
+console.log(repeat('Hey', 3))   //HeyHeyHey
+================= extract string=================
+function extract(s){
+    let str = s.trim().split(' ');
+    if(str.length>1) {
+        return str[0]+ ' '+ str[1].charAt(0);
+    }
+    return str;
+}
+
+=========================CHECK EMPTY STRING=======
+function isEmpty(str) {
+    return (!str || str.length === 0 );
+}
+
+===================
+function palindrome(str) {
+  var len = str.length;
+  var mid = Math.floor(len/2);
+  for ( var i = 0; i < mid; i++ ) {
+      if (str[i] !== str[len - 1 - i]) {
+          return false;
+      }
+  }
+  return true;
+}
+palindrome('madam') 
+======reverse each word in string and each letter in words=========
+
+var str='hello world how is going on';
+var response= str.toLowerCase().split(' ');
+var out = response.map((i) => i.split('').reverse().join(''));
+
+//out= no gniog si woh dlrow olleh;
+
+=====find duplicates from string===========
+var s='sankargowd Going to school';
+var arr = s.toLowerCase().split('');
+arr.filter((value, index, array) => {if(array.indexOf(value) === index) {return value}})
+
+===========find repeated charecters in string===============
+ar=s.toLowerCase().split(''); ar.filtr((val, in, ar) => {if(ar.indexOf(val) === ind) { return val;
+var name="Going to Office";
+
+var stringsep=name.toLowerCase().split('');
+var newObject={};
+var maxValue=1;
+var string=''
+for(let i=0;i<stringsep.length;i++){
+  
+  if(newObject.hasOwnProperty(stringsep[i])){
+      newObject[stringsep[i]]=newObject[stringsep[i]]+1
+      if(maxValue<newObject[stringsep[i]]){
+        maxValue=newObject[stringsep[i]];
+        string=stringsep[i];
+      }
+  }else{
+      newObject[stringsep[i]]=1
+  }
+}
+console.log(maxValue+" time "+ string);
+
+=========2nd way by using nested for loop == here we don't get number=============
+
+function maxchar(s){
+    var result='';
+    for(var i=0; i<s.length; i++){
+        for(var j=i+1; j<s.length; j++){
+            if(s[i] ==s[j]){
+                result= s[i];
+            }
+        }
+    }
+    return result; 
+}
+=========== compress s string===============
+
+function compressStr(str) {
+    let compress='';
+    let count=1;
+    let currentChar=str[0];
+    for(let i=1; i<str.length; i++){
+        if(str[i] === currentChar){
+            count++;
+        } else {
+            compress += currentChar+count;
+            currentChar = str[i];
+            count=1;
+        }
+    }
+    compress += currentChar+count;
+    return compress;
+}
+console.log(compressStr('aaabbccccdee'))  // a3b2c4d1e2
+
+=================Given two strings, return true if they are anagrams of one another==========
+var firstWord = "Mary";
+var secondWord = "Army";
+
+isAnagram(firstWord, secondWord);
+//ANS => true
+
+function isAnagram(first, second) {
+  
+  var a = first.toLowerCase();
+  var b = second.toLowerCase();
+
+  a = a.split("").sort().join("");
+  b = b.split("").sort().join("");
+
+  return a === b;
+}
+
+========='sankar'.repeat(3); // 'sankarsankarsankar=======
+
+====STRING methods cheatsheet=========
+
+'Java.concat('', 'script') //Javascript
+'Javascript'.slice(4)  //script
+'java-script'.split('-')   //['java','script']
+'javascript'.includes('script')   //true
+'javascript'.indexOf('s')   //4
+'javascript'.at(0)   //j
+'javascript'.charAt(0)   //j
+'  javascript  '.trim()   // 'javascript'
+'  javascript  '.trimStart()   //'javascript  'x
+'  javascript  '.trimEnd()   //'  javascript'
+'javascript'.charCodeAt(0)   //74
+'javascript'.valueOf('javascript')   //javascript
+'javascript'.subString(4)   //script
+'javascript'.repeat(2)   //javascriptjavascript
+'jawascript'.replace('w', 'v')   //javascript
+'jevescript'.replaceAll('e', 'a')   //javascript
+'jevescript'.search(/JAVA/)  //0
+'JavaScript'.match([A-Z]/g)  //['J','S']
+'JavaScript'.endsWith('e')   //false
+'JavaScript'.startWith('j')   //true
+'Java'.padEnd(10,'a')        //Javaaaaaaa
+'Java'.padStart(10,'J')        //JJJJJJJava
+
+====================================string problems ============= END ========================
+
+let reasonMap = {
+    DISPLACEMENT_POWER_OUTAGE: 'Displacement - Power Outage',
+    DISPLACEMENT_WEATHER: 'Displacement - Weather',
+    DISPLACEMENT_TECHNICAL_ISSUE: 'Displacement - Technical Issue',
+    DISPLACEMENT_WRONG_WORKSTATION: 'Displacement - Wrong Workstation',
+    DISPLACEMENT_TEST_ENVIRONMENT: 'Displacement - Test Environment',
+    DISPLACEMENT_TA_ERROR: 'Displacement - TA Error',
+    DISPLACEMENT_EMERGENCY_REFUND: 'Displacement - Emergency Refund Request',
+    DISPLACEMENT_OTHER: 'Displacement - Other',
+    TCC_POST_VOID: 'TCC Post Void',
+    SCORE_CANCELLATION: 'Score Cancellation',
+    ILLNESS_OTHER: 'Abandoned - Illness/Other',
+  };
+ let  distValues = [
+    {
+      columnId: 'deliveryExceptionReason',
+      values: Object.values(this.reasonMap),
+    },
+  ];
+
+let res = distValues.map((i) => i.values)
+console.log(res)
+
+// ["Displacement - Power Outage", 
+"Displacement - Weather", 
+"Displacement - Technical Issue", 
+"Displacement - Wrong Workstation", 
+"Displacement - Test Environment",
+"Displacement - TA Error", 
+"Displacement - Emergency Refund Request",
+"Displacement - Other", 
+"TCC Post Void",
+"Score Cancellation", 
+"Abandoned - Illness/Other"]
+===============================Array problems ============== START==============================
+
+=====Array methods cheatSheet===
+
+=>const numbers = [2, 4, 6, 8, 10];
+const numbersMap = numbers.map(element => element * 2);
+console.log(numbersMap); //[4, 8, 12, 16, 20];
+
+=>const numbers = [1,2,3,4];
+const filtered = numbers.filter(item => item === 2);
+console.log(filtered );   [2]
+
+=> const numbers = [2, 4, 8, 1];
+ const reduced = numbers.reduce((accumulator, current) => accumulater+current);
+console.log(reduced)   //15
+
+=>const numbers = [1, 2, 3, 4, 5, 6];
+numbers.push(7); 
+console.log(numbers); // [1, 2, 3, 4, 5, 6, 7]
+
+=>const numbers = [1, 2, 3, 4, 5, 6];
+numbers.pop(); // 6
+console.log(numbers); // [1, 2, 3, 4, 5]
+
+=>const numbers = [10, 20, 30, 40, 50];
+numbers.shift()  //10
+console.log(numbers);   //[20, 30, 40, 50]
+
+=>=>const numbers = [10, 20, 30, 40, 50];
+numbers.unShift(1)  //length =6
+console.log(numbers);   //[1,10,20, 30, 40, 50]
+
+=>const numbers = [1, 2, 3, 4, 5, 6, 7];
+const spliced = numbers.splice(2,0,9,10);
+console.og(spliced);   //[1, 2, 9, 10, 3, 4, 5, 6, 7]; 
+
+=>const numbers = [10, 20, 30, 40, 50, 60];
+const sliced = numbers.slice(1,3);
+console.log(sliced);    // [20,30];
+
+=>const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+const arr3 = arr1.concat(arr2);
+console.log(arr3);   //[1,2,3,4,5,6]
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.some(x => x===3);   //true
+numbers.some(x => x===6)    //false
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.evvery(x => x>3);   //false
+numbers.every(x=> x<6);     //true
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.reverse(); // [5, 4, 3, 2, 1]
+numbers; // [5, 4, 3, 2, 1]
+
+=>const numbers = [1,10,50,100,200];
+const numberIsIncluded = numbers.includes(100); 
+console.log(numberIsIncluded) // true
+
+=>const numbers = [10, 20, 30, 40, 50];
+numbers.at(4); // 50
+
+=>const numbers = [1,2,3,4,6,8,9];
+const findNumber = numbers.find(element => element > 5); 
+console.log(findNumber)// 6
+
+=>const numbers = [1, 2, [3, 4, [5, 6]]];
+numbers.flat(x)  // [1,2,3,4,5,6];
+
+=>const numbers = [1, 2, 3];
+numbers.fltMap((x) => x, x*x); //[1,1,2,4,3,9]
+
+=>const list = [1, 2, 3, 4, 5];
+list.indexOf(3); // 2
+list.indexOf(5); // 4
+list.indexOf(7); // -1
+
+=>const numbers = [1,2,3,4];
+const indexFound = numbers.findIndex(element => element === 3);
+console.log(indexFound); //2
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.lastIndexOf(3); // 2
+numbers.lastIndexOf(6); // -1
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.join('');   //'12345';
+
+=>const alpabeticalSort = ['Virginia', 'Cary', 'Tennessee', 'Alaska'];
+alpabeticalSort.sort(); // ['Alaska', 'Cary', 'Tennessee', 'Virginia']
+
+=>const numbers = [1, 2, 3, 4, 5];
+numbers.toString(); //'1,2,3,4,5'
+
+=>const set = new Set([1, 2, 3, 4, 5, 6]);
+Array.from(set); // [1, 2, 3, 4, 5 ,6]
+
+=>const numbers = [1, 2, 3];
+const array = numbers.entries();
+
+for (let x of array) {
+  console.log(x);
+} 
+// [0, 1]
+// [1, 2]
+// [2, 3]
+
+=>Array.isArray([1, 2, 3, 4, 5]); // true
+Array.isArray(5); // false
+
+===============accolite interview problems=======
+====sum of all positive numbers in array==========
+let num = [23, 53, 54, 65, 2, 0, 1, -2,-3];
+function calculatenum() {
+
+let nums=0;
+for(let i=0; i<num.length; i++){
+if(num[i] > 0) {
+nums += num[i] ;
+}
+}
+
+return nums;
+}
+console.log(calculatenum());
+
+2=> ========== add more properties to each object in this array=============
+const products = [
+  {
+   title: 'Shirt',
+   price : 80
+  },
+  {
+   title: 'Jeans',
+   price : 60
+  },
+  {
+   title: 'Pant',
+   price : 120
+  }
+]
+
+const updatedProducts = products.map(product => ({
+    ...product,
+    value: product.price*2,
+    quantity: product.price+5
+}));
+
+console.log(updatedProducts)
+====== sort firstName from this array==============
+let arr= [{
+    "id": 1,
+    "firstName": "Odelia"
+  }, {
+    "id": 2,
+    "firstName": "Dulciana"
+  }, {
+    "id": 3,
+    "firstName": "Kerrie"
+  }, {
+    "id": 4,
+    "firstName": "Alard"
+  }, {
+    "id": 5,
+    "firstName": "Susy"
+  }, {
+    "id": 6,
+    "firstName": "Marja"
+  }, {
+    "id": 7,
+    "firstName": "Antonius"
+  }, {
+    "id": 8,
+    "firstName": "Hermie"
+  }, {
+    "id": 9,
+    "firstName": "Chad"
+  }, {
+    "id": 10,
+    "firstName": "Sibella"
+  }];
+arr.sort((a, b) => {
+  if (a.firstName < b.firstName) {
+    return -1;
+  }
+  if (a.firstName > b.firstName) {
+    return 1;
+  }
+  return 0;
+});
+
+// Print the sorted array
+console.log(arr);
+
+===========print only id's from the ABOVE array=====================
+arr.forEach((item) => {
+return item.id;
+});
+
+3=> few more one line question====
+console.log(10%3)
+let x;
+console.log(x)  // undefined
+console.log(x || null)  // null
+let person = {
+name:'john'
+}
+console.log(person.name)  //'john'
+
+4=> few more questions ==== observable, observaer, behaviorsubject, subject, ngrx, rxjs
+
+============================================
+=============  double the array items=======
+function duplicate(arr) {
+  return arr.concat(arr);
+}
+
+duplicate([1, 2, 3, 4, 5]); // [1,2,3,4,5,1,2,3,4,5]
+
+===============find merged array and remove all duplicates from array=========
+var array1 = [1, 2, 3];
+var array2 = [2, 30, 1];
+var re=[...new Set([...array1, ...array2])]
+
+===== DEFINATION OF SET => The Set object lets you store unique values of any type=============
+=========add all items in array==============
+var a=[1,2,3,4];
+var toal=0;
+for(var i in a){
+    toal+=a[i];
+} //10
+===================remove item from array ==========
+let  value=4;
+let arrr=[1,2,3,4,5];
+arrr=arrr.filter((item)=> item !== value);
+console.log(arrr);
+//[1,2,3,5]
+
+==========in the same problem removing max value from array================
+let arrr=[1,2,3,4,5];
+var b= Math.max(...arrr);
+var c=arrr.filter((item)=> item !== value);
+console.log(c);
+//[1,2,3,4]
+
+======sort strings in array=========
+
+var animals = ["elephant", "dog", "cat", "bee", "ant"]
+animals.sort(function (a, b) {
+    if (a > b) {
+        return 1;
+    }
+    else if (b > a) {
+        return -1;
+    } else {
+    return 0;
+}
+});
+console.log(animals);
+//['ant', 'bee', 'cat', 'dog', 'elephant']
+
+===find difference between two arrays=====================
+
+var arr1=[1,2,3,4], arr2=[3,4,5,6];
+let difference = arr1.filter(x => !arr2.includes(x));
+ difference //[1,2]
+
+let difference = arr1.filter(x => arr2.includes(x));
+ difference //[3,4]
+
+==========remove falsy values from array============
+var arr = [ 0, 1, '', undefined, false, 2, undefined, null, , 3, NaN ];
+
+var filtered = arr.filter(Boolean);
+console.log(filtered);
+ Output: [ 1, 2, 3 ]
+
+======other way================
+
+var filtered = arr.filter(x => !!x);
+console.log(filtered);
+  Output: [ 1, 2, 3 ]
+
+===========to get zero as well===========
+
+var filtered = arr.filter(e => (e === 0 || e));
+console.log(filtered);
+Output: [ 0, 1, 2, 3 ]
+
+
+======== filter even numbers and multiply with each one========
+let nums = [11, 22, 33, 46, 75, 86, 97, 98];
+let squaredEvenNums = nums.filter(num => num%2===0 )
+                          .map(num=>num*num);
+====================== most reapeated item in array=====================
+
+var arr=[1,2,3,4,2,3,4,5,2,2,3,4];
+var newObj={};
+var maxValue=1;
+var number='';
+for(let i=0;i<arr.length;i++){
+  if(newObj.hasOwnProperty(arr[i])){
+      newObj[arr[i]]=newObj[arr[i]]+1
+      if(maxValue<newObj[arr[i]]){
+        maxValue=newObj[arr[i]];
+        number=arr[i];
+      }
+  }else{
+      newObj[arr[i]]=1
+  }
+}
+console.log(newObj);
+console.log(maxValue +" times "+ number)
+
+==========flatten array============
+
+var array=[1,2,[3,4,[5,[10,4,[4,2],5,5],6],7],8,9];
+//o/p [1,2,3,4,5,6,7,8,9]
+
+function flat(array){
+  var flatten=[];
+  for(let i=0;i<array.length;i++){
+    //1,2
+    if(Array.isArray(array[i])){
+      var values=flat(array[i]);
+      flatten =[...flatten,...values]
+    }
+    else{
+      flatten.push(array[i]);
+    }
+    //[3,4,[5,6],7]
+  }
+  return flatten; 
+}
+
+console.log(flat(array));
+
+========find most repeated number in group of numbers====================
+var a = String(112222334556667890);
+var arr=a.split('');
+var newobj={};
+var maxcount=1;
+var num='';
+for(var i=0; i<arr.length; i++){
+    if(newobj.hasOwnProperty(arr[i])){
+        newobj[arr[i]] = newobj[arr[i]]+1;
+        if(maxcount<newobj[arr[i]]){
+            maxcount=newobj[arr[i]];
+            num=arr[i];
+        }
+    } else {
+        newobj[arr[i]] =1;
+    }
+}
+
+console.log('max repeated'+ maxcount+'number'+ num)
+
+=======remove specific element from array============
+
+var array = [2, 5, 9];
+var index = array.indexOf(5);
+if (index > -1) {
+  array.splice(index, 1); // 2nd parameter means remove one item only
+}
+//[2,9];
+==================remove by dividing with 3 and 5 and multply them==================
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const oddNumbers = numbers.filter(number => number%3 === 0);
+const divisibleBy2or5 = numbers.filter(number => number%2 === 0 || number%5 === 0).map(odd => odd*odd);
+
+=========get string format from given array=================
+let myColor = ["Red", "Green", "White", "Black"];
+console.log(myColor.toString());
+console.log(myColor.join());
+console.log(myColor.join('+')); //'red+green+white+black'
+
+======================
+var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+ 
+for (var i in a) 
+{
+   console.log("row " + i);
+   for (var j in a[i]) 
+     {
+      console.log(" " + a[i][j]);
+     }
+}
+
+==============================sum of squares of numeric vector================
+
+function sum_sq(array) {
+  var sum = 0, 
+      i = array.length;
+  while (i--) 
+   sum += Math.pow(array[i], 2);
+  return sum;
+}
+ 
+console.log(sum_sq([0,1,2,3,4])); 
+//30
+
+==============sum and product of array ===========
+var array = [1, 2, 3, 4, 5, 6],
+    s = 0,
+    p = 1;
+for (var i = 0; i < array.length; i += 1) 
+   {
+    s += array[i];
+    p *= array[i];
+    }
+console.log('Sum : '+s + ' Product :  ' +p); 
+//s=21, p=720
+======================= union of two arrays=========
+1=>
+var a=[34, 35, 45, 48, 49];
+var b=[48, 55];
+var c=a.concat(b).sort();
+var res=c.filter((value,pos) => {return c.indexOf(value) == pos;} );
+//[34, 35, 45, 48, 49, 55]
+
+2=>
+
+var a = [34, 35, 45, 48, 49];
+var b = [48, 55];
+var union = [...new Set([...a, ...b])];
+//[34, 35, 45, 48, 49, 55]
+
+==========merge twoarrays and remove duplicates==============
+(this function will remove duplicates in single array as well by calling function with single array parameter)
+function arrayUnique(array) {
+    var a = array.concat();
+    for(var i=0; i<a.length; ++i) {
+        for(var j=i+1; j<a.length; ++j) {
+            if(a[i] === a[j])
+                a.splice(j--, 1);
+        }
+    }
+
+    return a;
+}
+
+var array1 = ["Vijendra","Singh"];
+var array2 = ["Singh", "Shakya"];
+    // Merges both arrays and gets unique items
+var array3 = arrayUnique(array1.concat(array2));
+
+=======remove max number in array======
+var a=[1,2,3,4,5];
+var max=Math.max(...a);
+var b= a.filter((i) => i !== max)
+console.log(b) // [1,2,3,4]
+
+========find duplicates in array===========
+
+var arr = [1, 2, 1, 3, 4, 3, 5];
+
+var findDuplicates = arr=> arr.filter((item, index) => arr.indexOf(item) !== index)
+var duplicateElements = findDuplicates(arr);
+duplicateElements
+[1,3]
+
+=====================other way to find duplicastes=============
+
+const yourArray = [1, 1, 2, 3, 4, 5, 5]
+let duplicates = []
+const tempArray = [...yourArray].sort()
+for (let i = 0; i < tempArray.length; i++) {
+  if (tempArray[i + 1] === tempArray[i]) {
+    duplicates.push(tempArray[i])
+  }
+}
+console.log(duplicates) //[ 1, 5 ]
+
+======================other way========
+
+[1, 2, 2, 4, 3, 4].filter((e, i, a) => a.indexOf(e) !== i) // [2, 4]
+==========find uniq==========
+[1, 2, 2, 4, 3, 4].filter((e, i, a) => a.indexOf(e) === i) // [1,2,3,4]
+
+=============================shuffle an array==============
+
+let array = [4, 32, 2, 5, 8];
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    }
+console.log("Sorted array=>", array);
+
+print bigger number from array=========
+
+function bigger(num){
+return function(val){
+return val>num;
+}
+}
+var res=[3,4,5,50,40].filter(bigger(10))
+res
+(2) [50, 40]
+
+=============Array============
+
+var array1 = new Array(1,1,1,1);
+array1
+//[1, 1, 1, 1]
+array1 instanceof Array
+//true
+Array.isArray(array1)
+ //true
+=sort array without using sort method===================
+let arr = [4, 32, 2, 5, 8];
+
+for (let i = 0; i < arr.length; i++) {
+  for (let j = i + 1; j < arr.length; j++) {
+    if (arr[i] > arr[j]) {
+      temp = arr[i];
+      arr[i] = arr[j];
+      arr[j] = temp;
+    }
+  }
+}
+
+//Q2 - Find the bug
+var dividend = 18;
+var numbers = [2, 3, 4, 5, 6, 7, 8, 9];
+var idx;
+
+for (idx = 0; idx < numbers.length; idx++) {
+  var factor;
+  var divisor = numbers[idx];
+  factor = false; //here added false otherwise it will print all numbers
+  if (dividend % divisor === 0) {
+    factor = true;
+  }
+  if (factor) {
+    console.log(divisor + " is a factor of " + dividend + "!");
+  }
+}
+//2 is a factor of 18!
+//3 is a factor of 18!
+//6 is a factor of 18!
+//9 is a factor of 18!
+
+========value is array of having two items and when one selected then other one should be disabled, here is logic for that
+
+this.requestForm.get('preferredResolution').valueChanges.subscribe((svalue) => {
+  const selectedNames = svalue
+    .filter((res) => res.selected)
+    .map((selectedItem) => selectedItem.name);
+
+  // Disable all items except the selected one
+  svalue.map((ele) => {
+//this is logic
+    ele.disabled = ele.selected ? false : selectedNames.length > 0;
+  });
+});
+
+//In this modification, all items except the selected one will be disabled. 
+The ele.disabled is set to true if the item is not selected (ele.selected is false) and at least one item is selected (selectedNames.length > 0). 
+This way, the logic ensures that only the selected item remains enabled, and the rest are disabled.
+
+=======================================Array problems ======== END ==========================
+
+=================Object problems=============================
+=====Object.freeze() and Object.seal() ==========
+const person = { name: "John", age: 30 };
+
+Object.freeze(person);
+
+person.age = 31; // Modifying properties is not allowed
+console.log(person); // Output: { name: "John", age: 30 }
+
+person.city = "New York"; // Adding new properties is not allowed
+console.log(person); // Output: { name: "John", age: 30 }
+
+delete person.name; // Removing properties is not allowed
+console.log(person); // Output: { name: "John", age: 30 }
+
+console.log(Object.isFrozen(person)); // Output: true
+
+==seal=========
+const person = { name: "John", age: 30 };
+
+Object.seal(person);
+
+person.age = 31; // Modifying an existing property is allowed
+console.log(person); // Output: { name: "John", age: 31 }
+
+person.city = "New York"; // Adding new properties is not allowed
+console.log(person); // Output: { name: "John", age: 31 }
+
+delete person.name; // Removing existing properties is not allowed
+console.log(person); // Output: { name: "John", age: 31 }
+
+console.log(Object.isSealed(person)); // Output: true
+
+
+find length of object==================
+
+var myObj={x:1,y:2}
+var size = Object.keys(myObj).length;
+//2
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+//ANS => xyz    =>reason => delete operator doesn’t delete prototype property.
+===========
+========if statement evaluates eval function f() {} which is undefined so answer is 1undefined===========
+
+var y = 1;
+if (function f() {}) {
+  y += typeof f;
+}
+console.log(y);
+
+//ANS=> 1undefined
+=====================
+=======js coding interview question link
+=======https://www.fullstack.cafe/blog/javascript-code-interview-questions========
+
+========oops concepts with simple examples=================
+https://betterprogramming.pub/object-oriented-programming-in-javascript-b3bda28d3e81
+==============================
+
+function overloading=============
+example ==========
+function sum(a, b) {
+    alert(a + b);
+}
+
+function sum(c) {
+    alert(c);
+}
+
+sum(3);//The output is 3.
+sum(2, 4);//The output is 2.
+
+In the JavaScript, when we write more than one functions with same name 
+that time JavaScript consider the last define function and override the previous functions. 
+
+=========================
+var d={};
+
+[ 'zebra', 'horse' ].forEach(function(k) {
+	d[k] = undefined;
+});
+//d = {zebra:undefined, horse: undefined};
+=======================
+1+1 =2
+1-1=0
+1+'1' ='11'
+1+ +'1' =2
+1+ -'1' =0
+===========================
+var a= 2;
+function test(){
+console.log(a);
+var a=3;
+}
+test(); //undefined
+===============================
+var a={},
+    b={key:'b'},
+    c={key:'c'};
+
+a[b]=123;
+a[c]=456;
+
+console.log(a[b]); //456
+As a result, a[b] and a[c] are both equivalent to a["[object Object]"] and can be used interchangeably 
+
+=====================
+for (let i = 0; i < 5; i++) {
+  setTimeout(function() { console.log(i); }, i * 1000 );
+}
+// 0,1,2,3,4
+bcz we  use let, The variable i is only seen in the for loop’s block scope.
+
+=======================
+
+for (var i = 0; i < 5; i++) {
+	setTimeout(function() { console.log(i); }, i * 1000 );
+}
+//5,5,5,5,5 
+//each function executed within the loop will be executed after the entire loop has completed and 
+all will therefore reference the last value stored in i, which was 5
+
+=========below one will fix issue
+
+for (var i = 0; i < 5; i++) {
+    (function(x) {
+        setTimeout(function() { console.log(x); }, x * 1000 );
+    })(i);
+}
+//0,1,2,3,4
+
+//Closures can be used to prevent this problem by creating a unique scope for each iteration, 
+storing each unique value of the variable within its scope
+==========================
+@viewChild() => Property decorator that configures a view query
+=ES6=============
+Template literals==
+Template literals provide an easy and clean way create multi-line strings and perform string interpolation
+
+=============object prototype===================
+DEF=>The prototype is an object that is associated with every functions and objects by default 
+=> example without using prototype============
+
+function Student() {
+    this.name = 'John';
+    this.gender = 'Male';
+}
+
+var studObj1 = new Student();
+studObj1.age = 15;
+alert(studObj1.age); // 15
+var studObj2 = new Student();
+alert(studObj2.age); // undefined
+
+====================detailed prototype example======
+function Student() {
+    this.name = 'John';
+    this.gender = 'M';
+}
+var studObj = new Student();
+
+console.log(Student.prototype); // object
+console.log(studObj.prototype); // undefined
+console.log(studObj.__proto__); // object
+
+console.log(typeof Student.prototype); // object
+console.log(typeof studObj.__proto__); // object
+console.log(Student.prototype === studObj.__proto__ ); // true
+ 
+=========list all propreties in object =========
+
+function getKeys(obj){
+var keys=[];
+for(var i in obj){
+keys.push(i);
+}
+return keys;
+}
+=======
+
+get values from object=======
+var obj={a:1,b:2,c:3,d:4}
+Object.values(obj)
+=============
+
+call, apply bind link:: https://www.codementor.io/niladrisekhardutta/how-to-call-apply-and-bind-in-javascript-8i1jca6jp
+
+call, apply , bind simple examples=====================
+URL: https://betterprogramming.pub/when-to-use-bind-call-and-apply-in-javascript-1ae9d7fa66d5
+
+====To link function to object values we use call, apply, bind
+ 
+====call a function from  the array =========
+
+var  a = function(){ console.log( "it's a function" ) }
+var  group = [ 0, "lizard",  false,  a]
+group[ 3 ]();
+it's a function
+==================
+===== call a function from object ============
+var runApp = {
+   init: function(){
+        this.run()
+   },
+   run: function() {
+            alert("It's running!");
+   }
+};
+runApp.init();   
+it's running
+ 
+=============print each value from object below=============
+
+var a ='{"a":"red-blue-black", "b":"green-pink-orenge", "c":"white-yellow-grey"}';
+var y =JSON.parse(a);
+var res = []
+for(var i in y){
+res = res.concat(y[i].split('-'));
+}
+console.log(res)
+for(var i=0; i<res.length; i++){
+console.log(res[i])
+} 
+ 
+==========EVENT LOOPING IN JAVASCRIPT===========
+console.clear();
+console.log("a");
+setTimeout(
+  function inAWhile(){
+      console.log("b");
+  },1000);
+console.log("c");
+setTimeout(
+  function justNow(){
+      console.log("d");
+},0);
+=============================
+============Array clone ways======
+
+1=> var a=[1,2];
+Var b=a.slice();
+2=>var b=a.map(el=>el);
+3=>var b=JSON.parse(JSON.stringify(a));
+4=>var b=[].concat(a);    
+
+==========================recursion ===================
+function pow(x, n) {
+ if (n == 1) {
+   return x;
+ } else {
+   return x * pow(x, n - 1);
+ }
+}
+alert( pow(2, 3) ); // 8 
+
+=============================find 0 to even or odd======
+
+for (var x=0; x<=15; x++) {
+        if (x === 0) {
+                console.log(x +  " is even");
+        }
+        else if (x % 2 === 0) {
+                console.log(x + " is even");   
+        }
+        else {
+                console.log(x + " is odd");
+        }
+}
+
+=========EPAM systems Interview questions======================
+
+=>	var foo = 10;
+	function foo(){}
+	console.log(foo)  // 10
+=> 	var foo;
+	function foo(){}
+	console.log(foo)  // [Function: foo]
+
+=>	var a= ['1','2','3'].map(parseInt);
+	console.log(a) // [1, NaN, NaN]
+
+=>	let num=[1,4,9];
+	let double= num.map((i) => i*2);
+	console.log(num)    // [1,4,9]
+	console.log(double)  //[2,8,18]
+
+=> 	for(var i=0; i<3; i++){
+    	var log = function() {
+        console.log(i);
+    	}
+    	setTimeout(log, 500)
+	}
+		// 3, 3, 3
+=> 	console.log(0||null) // null
+	console.log(0&&null)  // 0
+	console.log(1&&null)  // null
+
+=>  for(var i=0; i<10; i++){
+    (function(){
+        var y=i;
+        foo[i]=function(){
+            return y;
+        }
+    })()
+   }
+  console.log(foo[2]())  // 2
+
+=>  class DS{
+    constructor(x){
+        this.x=x;
+    }
+    static addDSText(f,b){
+        return f.x+b.x+b.y;
+    }
+  }
+  class Text extends DS{
+     constructor(x,y){
+        super(x);
+        this.y=y;
+    }
+}
+  let f= new DS(5);
+  let b= new Text(5,5);
+  console.log(Text.addDSText(f,b))  //15
+
+=> var ar1= 'jhon'.split('');
+   var ar2= ar1.reverse();
+   var ar3 = 'jones'.split('');
+   ar2.push(ar3);
+  console.log('ar1: '+ar1)  // ar1: n,o,h,j,j,o,n,e,s
+  console.log('ar2: '+ar2)  // ar2: n,o,h,j,j,o,n,e,s
+  console.log('ar3: '+ar3)  //  ar3: j,o,n,e,s
+  console.log('length: '+ ar1.length+' long: '+ar1.slice(-1))  // length: 5 long: j,o,n,e,s
+
+=>  Is Array.reduce() method will return onater array // ANs: No
+=>  Do we need to stringify array before storing in to local storage  //ANS: no
+
+========================END EPAM==============================
+=========================quick sort =================
+
+function quicksort(array) {
+  if (array.length <= 1) {
+    return array;
+  }
+
+  var pivot = array[0];
+  
+  var left = []; 
+  var right = [];
+
+  for (var i = 1; i < array.length; i++) {
+    array[i] < pivot ? left.push(array[i]) : right.push(array[i]);
+  }
+
+  return quicksort(left).concat(pivot, quicksort(right));
+};
+
+var unsorted = [23, 45, 16, 37, 3, 99, 22];
+var sorted = quicksort(unsorted);
+
+console.log('Sorted array', sorted);
+=====================binay search============
+
+function BinarySearch(array, value) {
+    let high = array.length - 1;
+    let low = 0;
+
+    if (value < array[low] || value > array[high]) 
+        return false;
+
+    while (high >= low) {
+        let mid = (high + low)/2;
+
+        if (value === array[mid])
+            return true;
+        else if (value < array[mid])
+            high = mid - 1;
+        else
+            low = mid + 1;
+    }
+
+    return false;
+}
+
+==========buble sort===========
+
+let bubbleSort = (inputArr) => {
+    let len = inputArr.length;
+    let swapped;
+    do {
+        swapped = false;
+        for (let i = 0; i < len; i++) {
+            if (inputArr[i] > inputArr[i + 1]) {
+                let tmp = inputArr[i];
+                inputArr[i] = inputArr[i + 1];
+                inputArr[i + 1] = tmp;
+                swapped = true;
+            }
+        }
+    } while (swapped);
+    return inputArr;
+};
+
+==other way====================
+
+let bubbleSort = (inputArr) => {
+    let len = inputArr.length;
+    for (let i = 0; i < len; i++) {
+        for (let j = 0; j < len; j++) {
+            if (inputArr[j] > inputArr[j + 1]) {
+                let tmp = inputArr[j];
+                inputArr[j] = inputArr[j + 1];
+                inputArr[j + 1] = tmp;
+            }
+        }
+    }
+    return inputArr;
+};
+=======================linear search=======
+
+function linearSearch(arr, item) {
+  // Go through all the elements of arr to look for item.
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === item) { // Found it!
+      return i;
+    }
+  }
+  
+  // Item not found in the array.
+  return null;
+}
+==================merge sort====================
+
+function mergeSort (unsortedArray) {
+ 
+  if (unsortedArray.length <= 1) {
+    return unsortedArray;
+  }
+  const middle = Math.floor(unsortedArray.length / 2);
+
+  const left = unsortedArray.slice(0, middle);
+  const right = unsortedArray.slice(middle);
+
+  // Using recursion to combine the left and right
+  return merge(
+    mergeSort(left), mergeSort(right)
+  );
+}
+
+function merge (left, right) {
+  let resultArray = [], leftIndex = 0, rightIndex = 0;
+
+  while (leftIndex < left.length && rightIndex < right.length) {
+    if (left[leftIndex] < right[rightIndex]) {
+      resultArray.push(left[leftIndex]);
+      leftIndex++; // move left array cursor
+    } else {
+      resultArray.push(right[rightIndex]);
+      rightIndex++; // move right array cursor
+    }
+  }
+  // We need to concat here because there will be one element remaining
+  return resultArray
+          .concat(left.slice(leftIndex))
+          .concat(right.slice(rightIndex));
+}
+
+============= sum of values of object===============
+
+function sumSal(sal) {
+  let sum = 0;
+  for (let salary of Object.values(sal)) {
+    sum += salary;
+  }
+  return sum; // 650
+}
+let sal = {
+  "John": 100,
+  "Pete": 300,
+  "Mary": 250
+};
+alert( sumSalaries(sal) );
+======= multiply======================================
+function mul (x) {
+  return function (y) { // anonymous function
+    return function (z) { // anonymous function
+      return x * y * z;
+    };
+  };
+}
+console.log(mul(2)(3)(4)); // output : 24
+console.log(mul(4)(3)(4)); // output : 48
+===========other one =================
+
+function mul(x){
+if(arguments.length ===3){
+return arguments[0]*arguments[1]*arguments[2];
+} else {
+ return function(y){
+return function(z){
+return x*y*z;
+}
+ }
+}
+}
+mul(2,3,4) //24
+mul(2)(3)(4) //24
+
+shallow copy vs deep copy==============
+shallow copy
+example 1 => var a={b:1};
+var c=a;
+OR var d =Object.assign(a, c);
+e=a.b =20;
+//e ={b:20}
+//a={b:20};
+deep copy
+ex => var e = JSON.parse(JSON.stringify(a)
+e=a.b =20;
+//e ={b:20}
+//a={b:1};
+=========================
+
+=polyfill=======
+A polyfill is essentially the specific code (or plugin) that would allow you to have some specific functionality 
+that you expect in current or “modern” browsers to also work in other browsers that do not have the support for that functionality built in.
+Polyfills are not part of the HTML5 standard
+Polyfilling is not limited to Javascript
+
+========find integer=====
+function isInt(num) {
+  return num % 1 === 0;
+}
+
+console.log(isInt(4)); // true
+console.log(isInt(12.2)); // false
+console.log(isInt(0.3)); // false
+
+========= delete method================= 
+var output = (function(x) {
+  delete x;  // delete will work only in object
+  return x;
+})(0);
+
+console.log(output);
+
+// look at this object
+var Employee = {
+  company: 'xyz'
+}
+var emp1 = Object.create(Employee);
+delete emp1.company
+console.log(emp1.company);
+console.log(emp1.hasOwnProperty('company')); //output : false
+
+======array delete=====
+var a=[1,2,3];
+var b= delete a[0];
+console.log(a[0)  // undefined
+console.log(a) // [ <1 empty item>, 2, 3 ]
+console.log(a.length) // 3
+
+=====if sum  of two items in in the array is target value then print positions of those items==
+function TwoSum(nums, target){
+    for(let i=0 ; i<nums.length; i++) {
+        for(let j=i+1; j<nums.length; j++)
+          if(nums[i]+nums[j] == target){
+             return [i,j]
+        }
+    }
+}
+let nums=[1,2,3,4,5,6,7]
+let target=5
+let result = TwoSum(nums, target)
+console.log(result)
+=========// (1+4=5) positions=[0.3]
+What will be the output of the following code?============
+var X = { Foo : 1}; 
+var output = (function() 
+{ 
+delete X.foo; 
+return X.foo; 
+} 
+)(); 
+console.log(output);
+The output would be undefined. The delete operator is used to delete the property of an object.
+
+==========What will be the output of the following code?=====================
+var Output = (function(x)
+{
+Delete X;
+return X;
+}
+)(0);
+console.log(output);
+The output would be 0. The delete operator is used to delete properties from an object.
+
+What will be the output of the following code?=====================
+var Employee =
+{
+company: 'xyz'
+}
+var Emp1 = Object.create(employee);
+delete Emp1.company Console.log(emp1.company);
+The output would be xyz. Here, emp1 object has company as its prototype property. The delete operator doesn’t delete prototype property.
+
+==============================
+======get function name========= 
+
+function abc() {
+    console.log( arguments.callee.name );
+}
+
+abc();
+//abc
+=============fibonacci problem============
+var fib = [0, 1];
+for(var i=fib.length; i<10; i++) {
+  fib[i] = fib[i-2] + fib[i-1];
+}
+console.log(fib);
+//[0,1,1,2,3,5,8,13,21,34]
+
+============factorial problem==============
+==> This is example of recursion
+DEF=> Recursion is a technique to iterate over an operation by having a function call itself repeatedly until it arrives at a result
+function factorial(n) {
+ return n ? n * factorial(n - 1) : 1;
+}
+alert( factorial(5) ); // 120
+
+======= sum all numbers till given number =======
+option-1
+function sumTo(n) {
+ let sum = 0;
+ for (let i = 1; i <= n; i++) {
+   sum += i;
+ }
+ return sum;
+}
+alert( sumTo(100) );
+option-2
+function sumTo(num) {
+if(num > 0) {
+return num += sumTo(--num);
+} else {
+return false;
+}
+}
+console.log(sumTo(100));
+
+============ java script problems ===========
+
+  1 => (function(x, f = ()=> x){
+        var x;
+        var y =x;
+         x=2;
+        return [x, y, f()];
+        })(1)
+       // [2, 1, 1]
+2 => typeof `${{Object}}`.prototype
+//"undefined"
+
+3 =>
+  var map = new Map([[1, 'one'], [2, 'two'],[3, 'three']])
+  var iterator = map.entries()
+  iterator.next()
+  // {value: Array(2), done: false}
+
+4=>
+  (function(){
+  let f= this ? class g{} : class h{};
+  return [ typeof f, typeof h, typeof g];
+  })()
+  //(3) ["function", "undefined","undefined"]
+
+5=>
+   var bar=1;
+   foo={}
+   foo ={
+   bar:2,
+   baz: ++bar
+   }
+   bar+foo.bar+foo.baz   //6
+==== when u do not want to reload page or  do not navigate to other page u can use it in <a> tag========
+<a href="javascript.void(0)">click</a>
+
+==============
+var x=22;
+(function(){
+    var x=44;
+    (function random(){
+        x++;    //undefined++ = NaNz
+        console.log(x);
+        var x=21;
+    })()
+})()
+
+//NaN ( it will search for local scope first so x is undefined so undefined++ is NaN)
+
+============globallogic interview topics================
+
+SDLC
+SOLID principles, better place to substition
+
+how to call parent method inside child class?
+json parse, why we need a second argument for this function
+why json parse and not a simple evaluation of a string
+how many threads in javascript?
+how create second thread?
+what is the second parameter in the parse int function
+which lifecycle hooks for angular?
+angular class decorators?
+what are field decorators
+what is one-way, two-way data binding
+what model is used by angular
+what is zone.js
+disable animations in angular
+
+
+=typescript
+Utility types
+generator functions
+Symbol data type
+
+what is template literals/template strings/string interpolation?
+do you know anything about safe integers?
+what is object destructing (how alias can be used)?
+how to perform random sort of given array?
+what is the second parameter for JSON.parse function?
+Symbols - how to get list of symbols which defined in object?
+Example of computed property name in object
+
+=========
+Generator methods
+
+==================
+what is enableProdMode()?
+how to call parent method inside child class?
+how many threads in javascript?
+which lifecycle hooks for angular?
+angular class decorators?
+what are field decorators
+what is one-way, two-way data binding
+what model is used by angular
+
+disable animations in angular application
+are promises cancellable, probably in a fetch call
+
+are promises cancellable, probably in a fetch call
+difference between set and weak set
+
+===== state management NGRX================
+
+Store: The application state is maintained in the store. It is immutable.
+Selectors: Angular components can subscribe to the store and get updates through selectors.
+Reducers: Reducers are responsible for handling the transition from one state to another.
+Actions: Actions modify the state of the store by using reducers.
+Effects: Effects are the results of actions. Also, they can be used to listen for particular action types and run when the action happens.
+ OR ==other defination
+State: Represents the state of the application. It is a plain JavaScript object.
+Actions: Plain objects that describe what happened in the application.
+Reducers: Pure functions that take the current state and an action, and return a new state.
+Selectors: Functions that extract slices of state from the store.
+Effects: Handle side effects such as asynchronous operations.
+
+simple example URL= https://www.syncfusion.com/blogs/post/angular-state-management-with-ngrx.aspx
+
+========= simple counter example for ngrx features used in angular app=============
+step: 1 => npm install @ngrx/store @ngrx/effects
+step: 2 => counter.action.ts==
+import { createAction } from '@ngrx/store';
+
+export const increment = createAction('[Counter] Increment');
+export const decrement = createAction('[Counter] Decrement');
+export const reset = createAction('[Counter] Reset');
+
+step: 3 => counter.reducer.ts
+
+import { createReducer, on } from '@ngrx/store';
+import { increment, decrement, reset } from './counter.actions';
+
+export const initialState = 0;
+const _counterReducer = createReducer(
+  initialState,
+  on(increment, (state) => state + 1),
+  on(decrement, (state) => state - 1),
+  on(reset, () => initialState)
+);
+
+export function counterReducer(state, action) {
+  return _counterReducer(state, action);
+}
+
+step: 4 => counter.module.ts
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
+import { counterReducer } from './counter.reducer';
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    StoreModule.forRoot({ count: counterReducer })
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+step: 5 => counter.selector.ts
+import { createSelector, createFeatureSelector } from '@ngrx/store';
+
+export const selectCounter = createFeatureSelector<number>('count');
+
+step: 6 => app.component.ts
+import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { increment, decrement, reset } from './counter.actions';
+import { selectCounter } from './counter.selectors';
+@Component({
+  selector: 'app-root',
+  template: `
+    <div>
+      <h1>Counter: {{ count$ | async }}</h1>
+      <button (click)="increment()">Increment</button>
+      <button (click)="decrement()">Decrement</button>
+      <button (click)="reset()">Reset</button>
+    </div>
+  `,
+})
+export class AppComponent {
+  count$: Observable<number>;
+  constructor(private store: Store) {
+    this.count$ = this.store.select(selectCounter);
+  }
+  increment() {
+    this.store.dispatch(increment());
+  }
+  decrement() {
+    this.store.dispatch(decrement());
+  }
+  reset() {
+    this.store.dispatch(reset());}
+}
+
+=====E-Commerce Application using ngrx all usecases============
+Features:
+
+Cart Management
+User Authentication
+Product Listings
+User Profile Management
+Notifications
+
+Step-by-Step Implementation
+Step 1: Setting Up the Angular and NgRx Project
+Install Angular CLI and create a new project:
+npm install -g @angular/cli
+ng new ngrx-ecommerce
+cd ngrx-ecommerce
+npm install @ngrx/store @ngrx/effects @ngrx/entity @ngrx/store-devtools
+Step 2: Define Actions
+Create actions for the various features. For example, for cart management:
+// src/app/store/actions/cart.actions.ts
+import { createAction, props } from '@ngrx/store';
+import { Product } from '../models/product.model';
+
+export const addToCart = createAction('[Cart] Add to Cart', props<{ product: Product }>());
+export const removeFromCart = createAction('[Cart] Remove from Cart', props<{ productId: number }>());
+export const clearCart = createAction('[Cart] Clear Cart');
+Step 3: Create Reducers
+Create reducers to handle state changes based on the actions:
+// src/app/store/reducers/cart.reducer.ts
+import { createReducer, on } from '@ngrx/store';
+import { addToCart, removeFromCart, clearCart } from '../actions/cart.actions';
+import { Product } from '../models/product.model';
+
+export interface CartState {
+  items: Product[];
+}
+export const initialState: CartState = {
+  items: []
+};
+
+const _cartReducer = createReducer(
+  initialState,
+  on(addToCart, (state, { product }) => ({ ...state, items: [...state.items, product] })),
+  on(removeFromCart, (state, { productId }) => ({ ...state, items: state.items.filter(item => item.id !== productId) })),
+  on(clearCart, state => ({ ...state, items: [] }))
+);
+
+export function cartReducer(state, action) {
+  return _cartReducer(state, action);
+}
+Step 4: Register the Store Module
+Register the store module in the application module:
+// src/app/app.module.ts
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { StoreModule } from '@ngrx/store';
+import { EffectsModule } from '@ngrx/effects';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { AppComponent } from './app.component';
+import { cartReducer } from './store/reducers/cart.reducer';
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    StoreModule.forRoot({ cart: cartReducer }),
+    EffectsModule.forRoot([]),
+    StoreDevtoolsModule.instrument({ maxAge: 25 })
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+Step 5: Create Selectors
+Create selectors to retrieve state slices:
+// src/app/store/selectors/cart.selectors.ts
+import { createSelector, createFeatureSelector } from '@ngrx/store';
+import { CartState } from '../reducers/cart.reducer';
+
+export const selectCart = createFeatureSelector<CartState>('cart');
+export const selectCartItems = createSelector(selectCart, (state: CartState) => state.items);
+export const selectCartTotal = createSelector(selectCartItems, items => items.reduce((total, item) => total + item.price, 0));
+
+Step 6: Use the Store in Components
+Create components and use the store to manage and display state:
+// src/app/cart/cart.component.ts
+import { Component } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs';
+import { Product } from '../store/models/product.model';
+import { selectCartItems, selectCartTotal } from '../store/selectors/cart.selectors';
+import { addToCart, removeFromCart, clearCart } from '../store/actions/cart.actions';
+@Component({
+  selector: 'app-cart',
+  template: `
+    <div>
+      <h1>Shopping Cart</h1>
+      <div *ngFor="let item of cartItems$ | async">
+        {{ item.name }} - ${{ item.price }}
+        <button (click)="removeFromCart(item.id)">Remove</button>
+      </div>
+      <h2>Total: ${{ cartTotal$ | async }}</h2>
+      <button (click)="clearCart()">Clear Cart</button>
+    </div>
+  `,
+})
+export class CartComponent {
+  cartItems$: Observable<Product[]>;
+  cartTotal$: Observable<number>;
+
+  constructor(private store: Store) {
+    this.cartItems$ = this.store.select(selectCartItems);
+    this.cartTotal$ = this.store.select(selectCartTotal);
+  }
+
+  addToCart(product: Product) {
+    this.store.dispatch(addToCart({ product }));
+  }
+  removeFromCart(productId: number) {
+    this.store.dispatch(removeFromCart({ productId }));
+  }
+
+  clearCart() {
+    this.store.dispatch(clearCart());
+  }
+}
+Step 7: Handle Asynchronous Operations with Effects
+Create effects for handling asynchronous operations such as fetching products:
+
+// src/app/store/effects/product.effects.ts
+import { Injectable } from '@angular/core';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { ProductService } from '../../services/product.service';
+import { loadProducts, loadProductsSuccess, loadProductsFailure } from '../actions/product.actions';
+import { catchError, map, mergeMap } from 'rxjs/operators';
+import { of } from 'rxjs';
+
+@Injectable()
+export class ProductEffects {
+  loadProducts$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(loadProducts),
+      mergeMap(() =>
+        this.productService.getAll().pipe(
+          map(products => loadProductsSuccess({ products })),
+          catchError(error => of(loadProductsFailure({ error })))
+        )
+      )
+    )
+  );
+
+  constructor(private actions$: Actions, private productService: ProductService) {}
+}
+Register the effects in the module:
+
+typescript
+Copy code
+// src/app/app.module.ts
+import { ProductEffects } from './store/effects/product.effects';
+
+@NgModule({
+  // ... other imports
+  imports: [
+    // ... other imports
+    EffectsModule.forRoot([ProductEffects]),
+  ],
+})
+export class AppModule {}
+Step 8: User Authentication and Profile Management
+Implement authentication and user profile management:
+
+typescript
+Copy code
+// src/app/store/actions/auth.actions.ts
+import { createAction, props } from '@ngrx/store';
+
+export const login = createAction('[Auth] Login', props<{ username: string, password: string }>());
+export const loginSuccess = createAction('[Auth] Login Success', props<{ user: any }>());
+export const loginFailure = createAction('[Auth] Login Failure', props<{ error: any }>());
+export const logout = createAction('[Auth] Logout');
+Create a reducer to handle authentication state:
+
+typescript
+Copy code
+// src/app/store/reducers/auth.reducer.ts
+import { createReducer, on } from '@ngrx/store';
+import { loginSuccess, loginFailure, logout } from '../actions/auth.actions';
+
+export interface AuthState {
+  user: any;
+  error: any;
+}
+
+export const initialState: AuthState = {
+  user: null,
+  error: null,
+};
+
+const _authReducer = createReducer(
+  initialState,
+  on(loginSuccess, (state, { user }) => ({ ...state, user })),
+  on(loginFailure, (state, { error }) => ({ ...state, error })),
+  on(logout, state => ({ ...state, user: null }))
+);
+
+export function authReducer(state, action) {
+  return _authReducer(state, action);
+}
+Register the auth reducer:
+
+// src/app/app.module.ts
+import { authReducer } from './store/reducers/auth.reducer';
+
+@NgModule({
+  // ... other imports
+  imports: [
+    // ... other imports
+    StoreModule.forRoot({ cart: cartReducer, auth: authReducer }),
+  ],
+})
+export class AppModule {}
+Step 9: Notifications
+Handle notifications using actions and reducers:
+
+// src/app/store/actions/notification.actions.ts
+import { createAction, props } from '@ngrx/store';
+
+export const showNotification = createAction('[Notification] Show', props<{ message: string }>());
+export const hideNotification = createAction('[Notification] Hide');
+Create a reducer for notifications:
+
+// src/app/store/reducers/notification.reducer.ts
+import { createReducer, on } from '@ngrx/store';
+import { showNotification, hideNotification } from '../actions/notification.actions';
+
+export interface NotificationState {
+  message: string;
+}
+
+export const initialState: NotificationState = {
+  message: ''
+};
+
+const _notificationReducer = createReducer(
+  initialState,
+  on(showNotification, (state, { message }) => ({ ...state, message })),
+  on(hideNotification, state => ({ ...state, message: '' }))
+);
+
+export function notificationReducer(state, action) {
+  return _notificationReducer(state, action);
+}
+
+==========Observable=====
+Observables as an interface to handle a variety of common asynchronous operations. For example:
+
+The HTTP module uses observables to handle AJAX requests and responses
+The Router and Forms modules use observables to listen for and respond to user-input events
+
+=> observables used http module
+=Observables do not mutate the server response (as can occur through chained .then() calls on promises). Instead, you can use a series of operators to transform values as needed.
+=HTTP requests are cancellable through the unsubscribe() method
+=Requests can be configured to get progress event updates
+=Failed requests can be retried easily
+
+======Example for this key word================
+
+const b={
+    name: 'vivek',
+    f: function(){
+        var self = this;
+        console.log('name is ',this.name)
+        (function(){
+          console.log('name is 2nd  ',this.name)
+          console.log('name is ',self.name)
+        })()
+    }
+}
+b.f()
+
+//name is  vivek  (it directly refers object b)
+//name is 2nd   undefined  (bcz it inside IIFE function it refers global object so there is not name for this)
+//name is  vivek (self again refers object b)
+=========function currying=============
+def=> Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c)
+
+example 1=> 
+
+function curry(f) { // curry(f) does the currying transform
+  return function(a) {
+    return function(b) {
+      return f(a, b);
+    };
+  };
+}
+// usage
+function sum(a, b) {
+  return a + b;
+}
+let curriedSum = curry(sum);
+alert( curriedSum(1)(2) ); // 3
+
+example 2 =>
+
+function sum(a, b, c) {
+  return a + b + c;
+}
+
+let curriedSum = curry(sum);
+alert( curriedSum(1, 2, 3) ); // 6, still callable normally
+alert( curriedSum(1)(2,3) ); // 6, currying of 1st arg
+alert( curriedSum(1)(2)(3) ); // 6, full currying
+
+example 3=>
+
+function multiply(a,b){
+  return a*b;
+}
+
+function currying(fn){
+  return function(a){
+    return function(b){
+      return fn(a,b);
+    }
+  }
+}
+
+var curriedMultiply = currying(multiply);
+multiply(4, 3); // Returns 12
+curriedMultiply(4)(3); // Also returns 12
+
+==========call back function==================
+
+DEF=> Functions that are used as an argument to another function are called callback functions
+
+example =>
+function divideByHalf(sum){
+  console.log(Math.floor(sum / 2));
+}
+
+function multiplyBy2(sum){
+  console.log(sum * 2);
+}
+
+function operationOnSum(num1,num2,operation){
+  var sum = num1 + num2;
+  operation(sum);
+}
+operationOnSum(3, 3, divideByHalf); // Outputs 3
+operationOnSum(5, 5, multiplyBy2); // Outputs 20
+
+=========types of errors in javascript=============
+
+1. Syntax error: Syntax errors are mistakes or spelling problems in the code that cause the program to not execute at all or to stop running halfway through.
+ Error messages are usually supplied as well.
+2. Logical error: Reasoning mistakes occur when the syntax is proper but the logic or program is incorrect
+
+=========== What is the use of a constructor function in javascript? ===========
+DEF => Constructor functions are used to create objects in javascript.
+
+=>If we want to create multiple objects having similar properties and methods, constructor functions are used.
+EXAMPLE=>
+function Person(name,age,gender){
+  this.name = name;
+  this.age = age;
+  this.gender = gender;
+}
+var person1 = new Person("Vivek", 76, "male");
+console.log(person1);
+var person2 = new Person("Courtney", 34, "female");
+console.log(person2);
+
+==========var vs let vs const==============
+EXAMPLE 1=>
+for(let i = 0; i < 2; i++){
+  //Do something
+}
+console.log(i); // Throws error 
+for(var j = 0; j < 2; i++){
+  // Do something
+}
+console.log(j) // Outputs 2 (accessible out side of block scope but let not)
+
+Example 2=>
+function varVsLetFunction(){
+  let awesomeCar1 = "Audi";
+  var awesomeCar2 = "Mercedes";
+}
+
+console.log(awesomeCar1); // Throws an error
+console.log(awesomeCar2); // Throws an error  (now it's lexical scope)
+
+========= Explain Scope and Scope Chain in javascript ==============
+DEF =>
+Scope in JS determines the accessibility of variables and functions at various parts of one’s code.
+In general terms, the scope will let us know at a given part of code, what are variables and functions we can or cannot access.
+There are three types of scopes in JS:
+Global Scope
+Local or Function Scope
+Block Scope
+
+=========function scope vs block scope===============
+function hello(){
+    if(true){
+        var a='js';
+        let b= 'java';
+        const c= 'python';
+        console.log(a);
+        console.log(b)
+        console.log(c)
+    }
+        console.log(a)
+        console.log(b)
+        console.log(c)
+}
+hello()
+//b and c will error out of if statement
+
+==================What is the rest parameter and spread operator? =============
+EXAMPLE=>
+function extractingArgs(...args){
+  return args[1];
+}
+// extractingArgs(8,9,1); // Returns 9
+function addAllArgs(...args){
+  let sumOfArgs = 0;
+  let i = 0;
+  while(i < args.length){
+    sumOfArgs += args[i];
+    i++;
+  }
+  return sumOfArgs;
+}
+addAllArgs(6, 5, 7, 99); // Returns 117
+addAllArgs(1, 3, 4); // Returns 8
+
+==========SET and weakSet in js========== link ==https://www.programiz.com/javascript/set-weakset
+
+====deep copy vs shallow copy=================
+in primitive data types
+let a=5;
+let b=a;
+if b value changed
+b=6;
+console.log(a);
+//a=5
+since primitve data types value types original value will not copied by new value
+=> complex data types are reference types
+let obj = {
+    a: 1,
+    b: 2,
+    c: {
+        age: 30
+    }
+};
+let obj2=obj.a=5
+console.log(obj2)
+//obj2 {a:5, b:2, c:{age30}};
+
+shallow copy will prevent this problem but  shallow copy will not work for nestes objects 
+var objclone = Object.assign({},obj);
+console.log('objclone: ', objclone);
+var deepclone = JSON.parse(JSON.stringify(obj))
+console.log('deepclone: ', deepclone);
+obj.c.age=20;
+obj.a=4;
+//objclone:  {a: 1, b: 2, c: {age:20}}
+//deepclone:  {a: 1, b: 2, c: {age:30}}
+
+======= nullish coelscing operator===========
+
+DEF=> The nullish coalescing (??) operator is a logical operator that returns its right-hand side operand when its 
+left-hand side operand is null or undefined, and returns its left-hand side operand
+EXAMPLE=>
+const foo = null ?? 'default string';
+console.log(foo);
+// Expected output: "default string"
+const bar = undefined ?? 'check nullish';
+console.log(bar);
+const baz = 0 ?? 42;
+console.log(baz);
+// Expected output: 0
+=================EPAM systems js questions==========
+
+1=>console.log(0 || null) => ANS: null
+2=>console.log(0 && null) => ANs: 0
+3=>type of arguments in side a function => ANS: object
+4=>what is type of class => ANS: function
+5=>
+ var foo=5;
+function foo(){}
+console.log(foo) => ANS: 5
+6=>  var foo;
+function foo(){}
+console.log(foo) => ANS: [Function: foo]
+
+7=> does javascript support class like inheritance => ANS: inheritance is supported by prototypal object
+8=> is javascript case sensitive => ANS: yes
+9=> ['1','2','4'].map(parseInt) => ANS: [ 1, NaN, NaN ]
+10=> can Array.reduce() method return Array => ANS: No, it will give final accumulated value
+11=> Before you save the array in the localStorage ? => ANS: 
+you need to convert it to a string since it can only store string
+
+12=> var ar1='john'.split('');
+var ar2=ar1.reverse();
+var ar3='jones'.split('');
+ar2.push(ar3)
+console.log('len='+ ar1.length+ 'last='+ar1.slice(-1))
+ ANs: len=5last=j,o,n,e,s
+
+13=> 
+class DS{
+    constructor(x){
+        this.x=x;
+    }
+    static addDSTest(f,b){
+        return f.x+b.x+b.y;
+    }
+}
+class Test extends DS{
+    constructor(x,y){
+        super(x);
+        this.y=y;
+    }
+}
+let f=new DS(5);
+let b=new Test(5,5);
+console.log(Test.addDSTest(f,b)) //ANs: 15
+
+
+higher order function:
+=> example
+function callbackFunction(){
+    console.log('I am  a callback function');
+}
+// higher order function
+function higherOrderFunction(func){
+    console.log('I am higher order function')
+    func()
+}
+
+higherOrderFunction(callbackFunction);
+  // I am higher order function
+  // I am  a callback function
+
+====================can i use multiple interceptors==========
+DEF => Yes, you can use more than one interceptor in an Angular module. In fact, it is quite common to use multiple interceptors in order to perform different tasks such as adding authentication tokens,
+ logging HTTP requests and responses, or transforming request and response data.
+
+Example: u should use like below in the module providers
+providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
+    { provide: HTTP_INTERCEPTORS, useClass: LoggingInterceptor, multi: true }
+  ]
+
+==== logic for both==========
+import { Injectable } from '@angular/core';
+import {
+  HttpEvent,
+  HttpHandler,
+  HttpInterceptor,
+  HttpRequest,
+} from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable()
+export class AuthInterceptor implements HttpInterceptor {
+  constructor() {}
+
+  intercept(
+    req: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
+    // Retrieve the access token from local storage or any other source
+    const accessToken = localStorage.getItem('accessToken');
+
+    if (accessToken) {
+      // Add the access token to the request headers
+      const authReq = req.clone({
+        headers: req.headers.set('Authorization', `Bearer ${accessToken}`),
+      });
+
+      // Pass the modified request to the next interceptor in the chain or the backend
+      return next.handle(authReq);
+    }
+
+    // If there is no access token, pass the original request to the next interceptor in the chain or the backend
+    return next.handle(req);
+  }
+}
+
+@Injectable()
+export class LoggingInterceptor implements HttpInterceptor {
+  constructor() {}
+
+  intercept(
+    req: HttpRequest<any>,
+    next: HttpHandler
+  ): Observable<HttpEvent<any>> {
+    console.log(`HTTP request: ${req.url}`);
+
+    // Pass the original request to the next interceptor in the chain or the backend
+    return next.handle(req).pipe(
+      // Log the response
+      tap((event) => {
+        if (event.type === 4) {
+          console.log(
+            `HTTP response for ${req.url}:`,
+            event.status,
+            event.body
+          );
+        }
+      })
+    );
+  }
+} 
+
+=====================Dependency injection ==============
+Dependency injection is a design pattern that allows an object (or class) to depend on other objects (or classes)
+ without having to create them itself. In the context of Angular,
+example: define a service by using injectable decorator and we can use this service class in component
+=====ES6 features===========
+=>Arrow Functions:
+
+Arrow functions provide a shorter syntax for writing function expressions. Here is an example:
+EXAMPLE=>
+// Old Syntax: function add(a, b) { return a + b; } 
+// New Syntax: const add = (a, b) => a + b;
+=============Unlike regular functions, arrow functions do not have their own "this" =====
+EXAMPLE=>
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  regularFunction() {
+    setTimeout(function() {
+      console.log(this.name); // undefined
+    }, 1000);
+  }
+ arrowFunction() {
+    setTimeout(() => {
+      console.log(this.name); // John
+    }, 1000);
+  }
+}
+
+const person = new Person('John');
+person.regularFunction();
+person.arrowFunction();
+
+============ Arrow functions do not have an arguments binding.======
+EXAMPLE=>
+let myFunc = {  
+ showArgs(){ 
+  console.log(arguments); 
+ } 
+}; 
+myFunc.showArgs(1, 2, 3, 4);  // 0:1, 1:2, 2:3, 3:4 etc..
+Arrow===>
+let myFunc = {  
+  showArgs : () => { 
+  console.log(...arguments); 
+ } 
+}; 
+myFunc.showArgs(1, 2, 3, 4); // Uncought reference Error arguments not defined
+=========diference in each usecase=========
+Method Call
+const obj = {
+  value: 42,
+  regularFunc: function() {
+    console.log(this.value);
+  },
+  arrowFunc: () => {
+    console.log(this.value);
+  }
+};
+
+obj.regularFunc(); // 42
+obj.arrowFunc(); // undefined (this refers to the global object)
+
+=>Let and Const:
+ES6 introduced two new ways to declare variables: let and const. let is used to declare variables that can be reassigned, while const is used to declare variables that cannot be reassigned. Here is an example:
+EXAMPLE=>
+// Old Syntax: var name = "John"; name = "Jane"; 
+// New Syntax: let name = "John"; name = "Jane"; const pi = 3.14; pi = 3.14159; 
+// This will give an error
+
+=>Template Literals:
+
+Template literals provide an easy way to concatenate strings and variables. They use backticks (`) instead of single or double quotes. Here is an example:
+EXAMPLE=>
+// Old Syntax: var name = "John"; console.log("Hello, " + name + "!"); 
+// New Syntax: const name = "John"; console.log(`Hello, ${name}!`);
+
+=>Destructuring Assignment:
+
+Destructuring is extract variables from arrays and properties from objects, Here is an example:
+EXAMPLE=>
+const arr = [1,2,3];
+const [a,b,c] = arr;
+console.log(a,b,c) //1,2,3
+
+Old Syntax: var person = { name: "John", age: 30 }; 
+var name = person.name; var age = person.age; 
+// New Syntax: const person = { name: "John", age: 30 }; 
+const { name, age } = person;
+console.log(name, age) // jhon, 30
+
+=>Spread Operator:
+The spread operator allows you to spread elements of an array or object into another array or object. Here is an example:
+EXAMPLE=>
+lessCopy code// Old Syntax: var arr1 = [1, 2, 3]; 
+var arr2 = [4, 5, 6]; 
+
+var arr3 = arr1.concat(arr2); 
+// New Syntax: const arr1 = [1, 2, 3]; 
+const arr2 = [4, 5, 6]; 
+const arr3 = [...arr1, ...arr2];
+
+=>Rest parameters:
+
+Rest parameters allow you to pass an indefinite number of arguments to a function as an array. Here's an example:
+EXAMPLE=>
+function sum(...numbers) {
+  return numbers.reduce((a, b) => a + b);
+}
+console.log(sum(1, 2, 3, 4)); // 10
+
+=>Classes
+
+ES6 introduced a class syntax for creating objects with a constructor function and methods. Here's an example:
+EXAMPLE=>
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+  }
+}
+const john = new Person('John', 30);
+john.greet(); // 'Hello, my name is John and I'm 30 years old.'
+
+======OOPS concepts in typescript=============
+1. Encapsulation:
+Hide internal implementation details and expose only neccesay information
+example:
+class BankAccount {
+  private balance: number;
+constructor(balance:number){
+	this.balance balance;
+}
+public getBalance(): number {
+	return this.balance;
+}
+public deposit(amount:number): void{
+	this.balance += amount;
+}
+}
+
+2.Inheritance
+
+create new class based on existing class
+example: 
+class Animal {
+name:string;
+constructor(name:string){
+this.name = name;
+}
+public sound() {
+console.log('generic sound');
+}
+}
+
+class Dog extends Animal {
+constructor(name:string){
+	super(name);
+}
+  public sound():void {
+	console.log('woof');
+}
+}
+
+3.Abstraction
+
+Show only essential features and hide internal details
+
+4.Polymorphism
+
+Ability of object tot ake multipleforms
+
+==========Steps to Improve Angular application security============
+
+Implementing security in an Angular application involves several steps to protect your application from various threats and vulnerabilities. 
+Here are some best practices to consider when implementing security in an Angular application:
+
+1=>Secure Backend API: Ensure that your backend API is properly secured using authentication and authorization mechanisms such as JWT (JSON Web Tokens), OAuth, or session-based authentication. 
+Implement measures like HTTPS to encrypt communication between the Angular application and the backend server.
+
+2=>Authentication: Implement user authentication to verify the identity of users accessing your Angular application. Angular provides various authentication mechanisms, 
+including Angular Router Guards and libraries like ngx-auth and ng2-jwt, which can be used to handle authentication flows and protect routes.
+
+3=>Authorization: Control access to different parts of your application based on user roles and permissions. Angular provides features like route guards and directives that can help you enforce authorization rules. Additionally, 
+you should validate user permissions on the server-side to prevent unauthorized access to sensitive data.
+
+4=>Cross-Site Scripting (XSS) Prevention: Angular automatically sanitizes user input by default, but it's important to be cautious when working with user-generated content. 
+Avoid using innerHTML and utilize Angular's built-in sanitization mechanisms, such as the DomSanitizer service, when rendering dynamic content.
+
+5=>Cross-Site Request Forgery (CSRF) Protection: Protect your Angular application against CSRF attacks by implementing CSRF tokens. 
+Ensure that your backend API sets and verifies CSRF tokens for requests that modify data or perform sensitive operations. You can include the token in headers or as a part of the request payload.
+
+6=>Input Validation: Validate and sanitize user input on the server-side to prevent injection attacks, such as SQL injection or NoSQL injection. 
+Use server-side frameworks and libraries that provide built-in mechanisms for input validation and sanitization, and avoid relying solely on client-side validation.
+
+7=>Secure Storage: Avoid storing sensitive information, such as passwords or access tokens, in local storage or cookies. 
+Instead, use Angular's HttpClient to send requests and handle tokens in memory or session storage, which are generally more secure.
+
+8=>Error Handling: Implement proper error handling mechanisms in your Angular application. Avoid displaying detailed error messages to end-users, as they may reveal sensitive information. 
+Instead, log errors securely on the server-side and provide meaningful, user-friendly error messages to the client.
+
+9=>Regular Updates and Security Patches: Keep your Angular version, dependencies, and libraries up to date to ensure you're using the latest security patches. 
+Stay informed about security vulnerabilities and follow best practices recommended by the Angular team and the security community.
+
+10=>Security Auditing and Penetration Testing: Regularly perform security audits and penetration testing on your Angular application to identify and address any potential vulnerabilities. 
+
+Remember that security is a continuous process, and it's essential to stay updated with the latest security practices and address any vulnerabilities that may arise.
+====================
+
+
+====ChatGPT Js interview questions and ans=======================
+
+==Zone.js in angular app===
+DEF: Zone.js is a JavaScript library that helps Angular applications manage change detection and error handling
+
+1.What is a closure in JavaScript?
+
+Answer: A closure is a function that having access to variables from its parent function's scope even after the parent function has finished executing.
+function outer() {
+  const x = 10;
+  function inner() {
+    console.log(x);
+  }
+  return inner;
+}
+
+const closureFunc = outer();
+closureFunc(); // Outputs 10
+2. Explain the event delegation pattern.
+Answer: Event delegation is a technique where you attach a single event listener to a common ancestor
+ element of multiple child elements. This is useful for handling events efficiently, especially when you have a large number of elements.
+
+<ul id='parentElement'>
+	<li>list1</li>
+	<li>list2</li>
+	<li>list2</li>
+</ul>
+document.getElementById("parentElement").addEventListener("click", function (event) {
+  if (event.target.tagName === "LI") {
+    console.log("Clicked on an LI element");
+  }
+});
+in above example, u attached event for parent and event handling goes with child elements as well
+
+3.What is the difference between null and undefined?
+Answer: null represents an intentional absence of any object value, while undefined represents a variable that has been declared but has not been assigned a value.
+
+let x; // undefined
+let y = null;
+4.Explain the concept of prototypal inheritance in JavaScript.
+Answer: JavaScript uses prototypal inheritance, where objects can inherit properties and methods from
+ other objects. Each object has a prototype object, and if a property or method is not found on the current object, JavaScript looks up the prototype chain.
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}`);
+};
+
+const person1 = new Person("Alice");
+person1.greet(); // Outputs "Hello, my name is Alice"
+
+5.What is the difference between let, const, and var for variable declaration?
+Answer: let and const are block-scoped and const variables cannot be reassigned. var is function-scoped and can be reassigned.
+
+let x = 10; // Can be reassigned
+const y = 20; // Cannot be reassigned
+var z = 30; // Function-scoped
+6. Explain asynchronous programming in JavaScript and how it is achieved.
+Answer: Asynchronous programming in JavaScript allows tasks to run in the background without blocking the main thread. It's achieved through callbacks, Promises, and async/await.
+
+// Using callback fun.
+function fetchData(callback) {
+    setTimeout(() => {
+      console.log('operation compiete');
+	callback('result');
+    }, 1000);
+}
+
+fetchData((data) => {
+  console.log(`recieved result: ${data}`); // Outputs "operation compiete" after 1 second
+});
+
+// Using Promises
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("Data fetched");
+    }, 1000);
+  });
+}
+
+fetchData().then(data => {
+  console.log(data); // Outputs "Data fetched" after 1 second
+});
+
+// using sync/await
+ async funtion fetchData() {
+	return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("operation compiete" ");
+    }, 1000);
+  });
+}
+async main(){
+	const result = awai fetchData();
+	console.log(`recieved result: ${data}`); // Outputs "operation compiete" after 1 second
+}
+
+7.What is the Event Loop in JavaScript and how does it work?
+Answer: The Event Loop is a mechanism that allows JavaScript to execute asynchronous tasks in a non-blocking manner. It continuously checks the message queue for pending tasks and executes them in the order they were added.
+
+setTimeout(() => {
+  console.log("Hello, world!");
+}, 1000); // This will be added to the message queue and executed after 1 second
+
+8. Explain Promises in JavaScript and how they help in handling asynchronous operations.
+Answer: Promises are a way to handle asynchronous operations in a more structured manner. They represent a value that may not be available yet but will be resolved in the future. Promises have three states: pending, fulfilled (resolved), or rejected.
+
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const data = "Data fetched";
+      if (data) {
+        resolve(data);
+      } else {
+        reject("Error fetching data");
+      }
+    }, 1000);
+  });
+}
+
+fetchData()
+  .then(data => {
+    console.log(data); // Resolved value: "Data fetched"
+  })
+  .catch(error => {
+    console.error(error);
+  });
+
+9. What is the difference between == and === in JavaScript for equality comparison?
+Answer: == performs type coercion, meaning it tries to convert operands to the same type before comparison. === (strict equality) compares both value and type without type coercion.
+
+5 == "5"; // true (coerced to the same value)
+5 === "5"; // false (different types)
+
+10. Explain the concept of hoisting in JavaScript.
+Answer: Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their containing scope during compilation. However, only the declarations are hoisted, not the initializations.
+
+console.log(x); // undefined (variable is hoisted but not initialized)
+var x = 10;
+
+sayHello(); // "Hello!" (function is hoisted)
+function sayHello() {
+  console.log("Hello!");
+}
+
+11. Explain the concept of prototypal inheritance in JavaScript.
+Answer: JavaScript uses prototypal inheritance, where objects can inherit properties and methods from other objects. Each object has a prototype object, and if a property or method is not found on the current object, JavaScript looks up the prototype chain.
+
+function Person(name) {
+  this.name = name;
+}
+Person.prototype.greet = function() {
+  console.log(`Hello, my name is ${this.name}`);
+};
+const person1 = new Person("Alice");
+person1.greet(); // Outputs "Hello, my name is Alice"
+
+15. What is the purpose of the bind() method in JavaScript? Provide an example.
+Answer: The bind() method is used to create a new function with a specified this value and initial arguments. It is often used to bind a function to a specific context.
+
+const person = {
+  name: "Alice",
+  greet: function() {
+    console.log(`Hello, my name is ${this.name}`);
+  }
+};
+
+const greetFunc = person.greet.bind(person);
+greetFunc(); // Outputs "Hello, my name is Alice"
+
+17. Explain the concept of currying in JavaScript and provide an example.
+Answer: Currying is a technique where a function that takes multiple arguments is transformed into a sequence of functions, each taking a single argument. It's useful for creating more specialized functions.
+
+function add(x) {
+  return function(y) {
+    return x + y;
+  };
+}
+const add5 = add(5);
+console.log(add5(3)); // 8
+
+18. What is the Event Emitter pattern in Node.js, and how is it used for handling events?
+Answer: The Event Emitter pattern is a core concept in Node.js for handling events and asynchronous communication. It provides an event-driven architecture where objects (emitters) can emit named events that trigger functions (listeners) to handle those events.
+
+const EventEmitter = require('events');
+class MyEmitter extends EventEmitter {}
+const myEmitter = new MyEmitter();
+myEmitter.on('customEvent', () => {
+  console.log('Event triggered');
+});
+
+myEmitter.emit('customEvent'); // "Event triggered"
+
+19. What are Web Workers in JavaScript, and how do they work?
+Answer: Web Workers are a mechanism in JavaScript for running scripts in the background, separate from the main thread. They enable multi-threading in web applications, allowing tasks to be executed without blocking the user interface.
+// Creating a new Web Worker
+const worker = new Worker('worker.js');
+
+// Sending data to the worker
+worker.postMessage({ message: 'Hello from main thread!' });
+
+// Handling messages from the worker
+worker.onmessage = function(event) {
+  console.log(event.data); // Data from the worker
+};
+19.Explain the concepts of memoization and how it can be implemented in JavaScript for optimization.
+Answer: Memoization is a technique used to optimize functions by caching their results based on their input parameters. It's often used to avoid redundant calculations in recursive or expensive functions.
+
+function memoize(fn) {
+  const cache = {};
+  return function(...args) {
+    const key = JSON.stringify(args);
+    if (cache[key]) {
+      return cache[key];
+    } else {
+      const result = fn(...args);
+      cache[key] = result;
+      return result;
+    }
+  };
+}
+
+const expensiveFunction = memoize(function(n) {
+  console.log(`Calculating for ${n}`);
+  return n * 2;
+});
+
+console.log(expensiveFunction(5)); // Calculates and caches the result
+console.log(expensiveFunction(5)); // Returns the cached result
+
+==========innova solutions=== questions=====
+1. rxjs Map oprators deep dive
+2. if three child components used and common shared service used 3 components and we have counter function 
+sharing from service, if i clicked A component 3 times it should show counter 3 remaining components zero
+ANS=> in this case we can use coponent instance in each coponent
+
+3. when we use forkJoin operator, we have 5 api's what will happen one api get failed ?
+ 
+ANS => forkJoin is called after catchError is called on each API individually. If any of the API requests fail, 
+the corresponding error message is logged to the console and the throwError operator is used to propagate the error. Finally, 
+the forkJoin operator is called on the modified requests and the responses are handled in the subscribe block.
+
+4. By using interceptors, in 5 api's 3 internal api's and 2 external api's i want use interceptor only for internal api's ?
+
+5.when i use 5 api's, if one api failed remaining api's will get called or not?
+
+ANS=> In Angular, when you subscribe to multiple APIs, they are executed independently and simultaneously,
+ meaning that if one API fails, it won't stop the other APIs from being executed.
+
+6. when i use switchMap, i have two components calling same service method, what happen if call compA method 
+back to compB before it called in compA ?
+
+ANS: regardless of which component calls the service method first, when using switchMap, only the latest observable matters. 
+If compA calls it first but compB calls it again before compA's operation completes, compA's operation will effectively be canceled or overridden by compB's call
+
+========RXjs operators==============
+forkjoin => by using this, we can execute multiple api's at time, It waits all observales to be completed and emit last value of each observable, 
+         if one observable not complete forkJoin never complete
+throttleTime():  picks the latest value emitted in the source observable.
+takewhile(): Takes values from the source only while they pass the condition given. When the first value does not satisfy, it completes
+
+1.map: Transforms each value emitted by an Observable using a function and emits the transformed values.
+
+2.filter: Filters values emitted by an Observable based on a predicate function and emits only the values that pass the condition.
+
+3.tap (formerly known as do): Allows performing side effects for each emission without modifying the emitted value. It's often used for debugging or logging.
+
+4.switchMap: Projects each source value to an Observable, then cancels the previous subscription and subscribes to the new Observable, emitting its values.
+
+5.mergeMap (formerly known as flatMap): Maps each value to an Observable and merges all inner Observables' emissions into a single Observable stream.
+
+6.concatMap: Maps each value to an Observable and sequentially emits values from each inner Observable, preserving order.
+
+7.debounceTime: Delays emission of values from the source Observable, and if a new value arrives before the delay duration, the previous value is discarded.
+
+8.distinctUntilChanged: Emits values only when the current value is different from the previous one, based on a provided comparator function.
+
+9.startWith: Emits a specified value as the first emission before the source Observable begins emitting its items.
+
+10.combineLatest: Combines multiple Observables and emits an array containing the most recent values from each Observable whenever any Observable emits a value.
+
+11.forkJoin: Waits for each Observable provided and emits the last value from each Observable once all Observables complete.
+
+12.retry: Re-subscribes to the source Observable if it encounters an error, for a specified number of retry attempts.
+
+13.catchError (formerly known as catch): Catches errors in the Observable sequence and replaces them with another Observable or throws an error.
+
+14.finalize: Performs a specified action when the source Observable completes or errors, regardless of whether it emits a value or not.
+
+15.take : The take operator emits only the first n values emitted by the source Observable, then completes.
+
+EXAMPLE:
+// src/app/data.service.ts
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  private apiUrl = 'https://api.example.com/data';
+
+  constructor(private http: HttpClient) {}
+
+  getData(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
+  }
+}
+// src/app/data-display/data-display.component.ts
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { take } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-data-display',
+  template: `
+    <div *ngFor="let item of data">
+      {{ item | json }}
+    </div>
+  `,
+})
+export class DataDisplayComponent implements OnInit {
+  data: any[] = [];
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dataService.getData().pipe(
+      take(3) // Take only the first 3 items
+    ).subscribe(data => this.data = data);
+  }
+}
+
+16:takeUntil : The takeUntil operator emits values from the source Observable until a notifier Observable emits a value
+Example:
+Unsubscribing from an observable when a component is destroyed.
+// src/app/data-display/data-display.component.ts
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { DataService } from '../data.service';
+import { Subject } from 'rxjs';
+import { takeUntil } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-data-display',
+  template: `
+    <div *ngFor="let item of data">
+      {{ item | json }}
+    </div>
+  `,
+})
+export class DataDisplayComponent implements OnInit, OnDestroy {
+data: any[] = [];
+  private destroy$ = new Subject<void>();
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dataService.getData().pipe(
+      takeUntil(this.destroy$) // Take values until destroy$ emits
+    ).subscribe(data => this.data = data);
+  }
+
+  ngOnDestroy() {
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
+}
+
+17: takeWhile : The takeWhile operator emits values from the source Observable as long as a condition holds true.
+EXAMPLE:
+// src/app/data-display/data-display.component.ts
+import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { takeWhile } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-data-display',
+  template: `
+    <div *ngFor="let item of data">
+      {{ item | json }}
+    </div>
+  `,
+})
+export class DataDisplayComponent implements OnInit {
+  data: any[] = [];
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dataService.getData().pipe(
+      takeWhile(item => item.status === 'active') // Take values while condition is true
+    ).subscribe(data => this.data = data);
+  }
+}
+
+========Top 10 ways to use interceptors========https://medium.com/angular-in-depth/top-10-ways-to-use-interceptors-in-angular-db450f8a62d6=====================
+
+7=> filter: This operator filters the values emitted by the source Observable based on a predicate function.
+Example: const source$ = of(1, 2, 3, 4, 5);
+const filtered$ = source$.pipe(filter(value => value % 2 === 0));
+
+filtered$.subscribe(console.log); // Output: 2, 4
+
+9=> tap: This operator allows you to perform a side effect for each value emitted by the source Observable.
+Example: const source$ = of(1, 2, 3);
+const tapped$ = source$.pipe(tap(value => console.log(`Received value: ${value}`)));
+
+tapped$.subscribe(console.log); // Output: Received value: 1, 1, Received value: 2, 2, Received value: 3, 3
+
+11=> distinctUntilChanged: This operator filters out consecutive duplicate values emitted by the source Observable.
+Example: const source$ = of(1, 1, 2, 2, 3, 3);
+const distinct$ = source$.pipe(distinctUntilChanged());
+
+distinct$.subscribe(console.log); // Output: 1, 2, 3
+
+=======Single Page Application in angular ===========
+
+DEF=> Single Page Application (SPA) loads a single HTML page and dynamically updates the content as the user interacts with the app.
+and SPA updates the existing page with new data, thereby providing a smoother and faster user experience
+
+Key Characteristics of SPAs
+1=> Dynamic Content Loading: Only the necessary content is loaded and updated dynamically without reloading the entire page.
+2=> Client-Side Routing: Navigation within the application is handled on the client side using Angular's Router, allowing the URL to change without a full page reload.
+3=> Improved User Experience: Reduced load times and smoother transitions between views enhance the overall user experience.
+4=> Separation of Concerns: SPAs often follow the principles of separation of concerns, with a clear distinction between the client side (Angular) and server side (APIs, databases).
+
+=======monorepo in angulR===========
+
+A monorepo (mono-repository) is a software development strategy where code for multiple projects is stored in a single repository
+
+====Key Benefits of Using a Monorepo
+1=> Code Reuse: Shared libraries and components can be easily reused across different projects within the monorepo.
+2=> Consistency: Ensures consistent coding standards and tooling across projects.
+3=> Simplified Dependency Management: Dependencies can be managed in a unified way, reducing duplication and conflicts.
+4=> Ease of Refactoring: Refactoring is easier and less error-prone because all related projects are in one place.
+5=> Single Source of Truth: A single repository for the entire codebase makes it easier to track changes and manage version control.
+1=> Monorepo: A single repository containing code for multiple projects.
+2=> Benefits: Code reuse, consistency, simplified dependency management, ease of refactoring, and a single source of truth.
+3=> Tools: Nx is a popular tool for managing monorepos in Angular applications.
+4=> Setup: Using Nx, you can generate multiple applications and libraries, manage dependencies, and streamline development.
+
+======micro front end ========
+
+DEF=>Micro frontends are an architectural style where a single frontend application is divided into smaller, semi-independent 
+
+Key Benefits of Micro Frontends
+1=>Scalability: Different teams can work on different parts of the frontend independently.
+2=>Technology Agnostic: Each micro frontend can use a different technology stack if needed.
+3=>Ease of Deployment: Individual parts of the frontend can be deployed independently.
+4=>Isolation: Failures in one micro frontend do not necessarily affect others.
+5=>Incremental Upgrades: Parts of the application can be updated or rewritten without affecting the entire system.
+
+==============================Observable vs suvject vs behaviuorSubject=================
+Observables: An Observable is a stream of values that can be observed over time. Observables can be created from a variety of sources, including events, promises, and arrays. 
+They can also be transformed using operators to create new streams of data
+
+Example: const observable$ = new Observable(observer => {
+  observer.next(1);
+  observer.next(2);
+  observer.next(3);
+  observer.complete();
+});
+
+observable$.subscribe(value => console.log(value)); // Output: 1, 2, 3
+
+Subjects: A Subject is a special type of Observable that allows you to push new values to its subscribers. Subjects can act as both an Observable and an Observer.
+
+Example: const subject$ = new Subject();
+
+subject$.subscribe(value => console.log(value));
+
+subject$.next(1); // Output: 1
+subject$.next(2); // Output: 2
+subject$.next(3); // Output: 3
+
+BehaviorSubjects: A BehaviorSubject is a special type of Subject that has an initial value and replays it to any new subscribers. It also remembers the last emitted value, 
+so new subscribers will immediately receive the last emitted value.
+
+Example: const behaviorSubject$ = new BehaviorSubject(0);
+
+behaviorSubject$.subscribe(value => console.log(value)); // Output: 0
+
+behaviorSubject$.next(1); // Output: 1
+behaviorSubject$.next(2); // Output: 2
+
+behaviorSubject$.subscribe(value => console.log(value)); // Output: 2
+
+===================
+@ViewChild and @ViewChildren are decorators in Angular that allow you to access child components, directives, or elements from a parent component.
+
+=>@ViewChild is used to get a reference to a single child component, directive, or element that matches the specified selector
+
+Example: import { Component, ViewChild } from '@angular/core';
+import { ChildComponent } from './child.component';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <app-child></app-child>
+  `
+})
+export class ParentComponent {
+  @ViewChild(ChildComponent) childComponent: ChildComponent;
+
+  ngAfterViewInit() {
+    console.log(this.childComponent);
+  }
+}
+
+\=> @ViewChildren, on the other hand, is used to get a reference to multiple child components, directives, or elements that match the specified selector. 
+It returns a QueryList which is an iterable collection of the matched elements.
+Example: import { Component, ViewChildren, QueryList } from '@angular/core';
+
+@Component({
+  selector: 'app-parent',
+  template: `
+    <div #item></div>
+    <div #item></div>
+    <div #item></div>
+  `
+})
+export class ParentComponent {
+  @ViewChildren('item') items: QueryList<ElementRef>;
+
+  ngAfterViewInit() {
+    console.log(this.items);
+  }
+}
+
+======angular life cycle hooks==========
+
+1. ngOnChanges() Called before ngOnInit() and whenever one or more data-bound input properties change
+2. ngOnInit() Called once, after the first ngOnChanges(). This is where you initialize the component.
+3. ngDoCheck() Called during every change detection run, immediately after ngOnChanges() and ngOnInit().
+4. ngAfterContentInit() Called once after Angular projects external content into the component’s view.
+5. ngAfterViewInit() Called once after Angular initializes the component’s views and child views.
+6. ngAfterViewChecked() Called after every check of the component’s views and child views.
+7. ngOnDestroy() Called just before Angular destroys the component. Use this hook to clean up resources.
+
+=========Eagerly Loading vs lazy loading in angular================
+Eager Loading:
+Eager loading means that all the modules and components are loaded when the application starts. This is the default behavior in Angular.
+
+Characteristics of Eager Loading:
+
+1.All the necessary resources are loaded at once.
+2.Simpler to implement and manage.
+3.Can increase the initial load time, especially for large applications
+
+Lazy Loading:
+Lazy loading means that certain modules or components are loaded only when they are needed, typically when a user navigates to a route that requires that module. This can significantly improve the initial load time and overall performance of the application.
+
+Characteristics of Lazy Loading:
+
+1.Modules are loaded on demand.
+2.Reduces the initial load time and improves performance.
+3.Can add complexity to the routing configuration and module management.
+
+=========Cache data using in angular==========
+Caching data in Angular involves storing data so that it can be quickly accessed without repeatedly fetching it from a server or performing expensive computations. This can improve the performance and responsiveness of your application by reducing the number of HTTP requests and latency.
+
+Why Cache Data in Angular?
+1.Performance: Reduces the number of HTTP requests, leading to faster response times.
+2.Efficiency: Decreases the load on the server by avoiding redundant data requests.
+3.User Experience: Provides a smoother and faster experience for users, especially with slower network connections.
+4.Cost: Reduces bandwidth usage and server costs.
+
+Strategies for Caching Data in Angular
+1.In-Memory Caching
+
+export class DataService {
+  private cache = new Map<string, any>();
+
+  constructor(private http: HttpClient) {}
+getData(url: string): Observable<any> {
+    if (this.cache.has(url)) {
+      return of(this.cache.get(url));
+    } else {
+      return this.http.get(url).pipe(
+        tap(data => this.cache.set(url, data))
+      );
+    }
+  }
+}
+2.LocalStorage or SessionStorage
+
+export class DataService {
+  constructor(private http: HttpClient) {}
+
+  getData(url: string): Observable<any> {
+    const cachedData = localStorage.getItem(url);
+    if (cachedData) {
+      return of(JSON.parse(cachedData));
+    } else {
+      return this.http.get(url).pipe(
+        tap(data => localStorage.setItem(url, JSON.stringify(data)))
+      );
+    }
+  }
+}
+3.Service Workers with Angular Service Worker
+4.NgRx Store for State Management
+
+=========angular 16 new features========
+1.takeUntilDestroyed Operator
+A new RxJS operator called takeUntilDestroyed has been introduced, which simplifies the process of completing a stream when a related subject completes
+data$ = http.get('...').pipe(takeUntilDestroyed());
+2. Flexible ngOnDestroy
+Angular's lifecycle hooks have been improved to provide more flexibility. You can now inject DestroyRef corresponding to a component, directive, service, or pipe, and register the onDestroy lifecycle hook.
+EX: @Injectable()
+export class AppService {
+  destroyRef = inject(DestroyRef);
+
+  destroy() {
+    this.destroyRef.onDestroy(() => {
+      // cleanup
+    });
+  }
+}
+
+3.Angular Signals
+Angular Signals is a new feature in Angular 16 that allows you to define reactive values and express dependencies between them. 
+A signal is an accessible regular variable that users may access synchronously. It allows you to manage state changes effectively within Angular applications.
+
+EX: import { Component, signal, effect, computed } from '@angular/core';
+
+@Component({
+  selector: 'my-app',
+  template: `
+    <h1>Calculate Area</h1>
+    <p>Answer : {{ area() }}</p>
+    <button (click)="calculateArea(15,15)">Click</button>
+  `,
+})
+export class App {
+  height = signal(10);
+  width = signal(10);
+  area = computed(() => this.height() * this.width());
+
+  constructor() {
+    effect(() => console.log('Value changed:', this.area()));
+  }
+ calculateArea(height: number, width: number) {
+    this.height.set(height);
+    this.width.set(width);
+  }
+}
+
+4.Required Inputs
+You can now declare input values as necessary in Angular 16. One can be defined using either the @Input decorator or the @Component decorator inputs array:
+EX: export class App {
+  @Input({ required: true }) name: string = '';
+}
+
+@Component({
+  ...
+  inputs: [
+    { name: 'name', required: true }
+  ]
+})
+
+
+=====post vs put  methods in angular=========
+=>POST creates a new resource.
+  PUT updates an existing resource or creates it if it doesn't exist.
+=>Use POST for creating new entries.
+  Use PUT for updating existing entries or performing an upsert
